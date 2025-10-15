@@ -1,0 +1,212 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Polban"
+        },
+        {
+            "id": "Kosan A Ciwaruga Asri"
+        },
+        {
+            "id": "Kosan B Ciwaruga Indah"
+        },
+        {
+            "id": "Kosan C Ciwaruga Baru"
+        },
+        {
+            "id": "Kosan D Ciwaruga Raya"
+        },
+        {
+            "id": "Kosan E Ciwaruga Permai"
+        },
+        {
+            "id": "Kosan F Ciwaruga Hijau"
+        },
+        {
+            "id": "Kosan G Ciwaruga Sentosa"
+        },
+        {
+            "id": "Kosan H Ciwaruga Asih"
+        },
+        {
+            "id": "Kosan I Ciwaruga Sari"
+        },
+        {
+            "id": "Kosan J Ciwaruga Mekar"
+        },
+        {
+            "id": "Kosan K Ciwaruga Jaya"
+        },
+        {
+            "id": "Kosan L Ciwaruga Wangi"
+        },
+        {
+            "id": "Kosan M Ciwaruga Asoka"
+        },
+        {
+            "id": "Kosan N Ciwaruga Harmoni"
+        },
+        {
+            "id": "Kosan O Ciwaruga Bahagia"
+        },
+        {
+            "id": "Kosan P Ciwaruga Ceria"
+        },
+        {
+            "id": "Kosan Q Ciwaruga Cermai"
+        },
+        {
+            "id": "Kosan R Ciwaruga Segar"
+        },
+        {
+            "id": "Kosan S Ciwaruga Sejahtera"
+        },
+        {
+            "id": "Kosan T Ciwaruga Sempurna"
+        }
+    ],
+    "edges": [
+        {
+            "weight": 400,
+            "source": "Polban",
+            "target": "Kosan A Ciwaruga Asri"
+        },
+        {
+            "weight": 500,
+            "source": "Polban",
+            "target": "Kosan B Ciwaruga Indah"
+        },
+        {
+            "weight": 600,
+            "source": "Polban",
+            "target": "Kosan C Ciwaruga Baru"
+        },
+        {
+            "weight": 550,
+            "source": "Polban",
+            "target": "Kosan E Ciwaruga Permai"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan A Ciwaruga Asri",
+            "target": "Kosan B Ciwaruga Indah"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan A Ciwaruga Asri",
+            "target": "Kosan C Ciwaruga Baru"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan B Ciwaruga Indah",
+            "target": "Kosan D Ciwaruga Raya"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan C Ciwaruga Baru",
+            "target": "Kosan E Ciwaruga Permai"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan C Ciwaruga Baru",
+            "target": "Kosan H Ciwaruga Asih"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan D Ciwaruga Raya",
+            "target": "Kosan F Ciwaruga Hijau"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan E Ciwaruga Permai",
+            "target": "Kosan G Ciwaruga Sentosa"
+        },
+        {
+            "weight": 180,
+            "source": "Kosan F Ciwaruga Hijau",
+            "target": "Kosan H Ciwaruga Asih"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan F Ciwaruga Hijau",
+            "target": "Kosan K Ciwaruga Jaya"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan G Ciwaruga Sentosa",
+            "target": "Kosan I Ciwaruga Sari"
+        },
+        {
+            "weight": 150,
+            "source": "Kosan H Ciwaruga Asih",
+            "target": "Kosan J Ciwaruga Mekar"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan I Ciwaruga Sari",
+            "target": "Kosan K Ciwaruga Jaya"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan I Ciwaruga Sari",
+            "target": "Kosan N Ciwaruga Harmoni"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan J Ciwaruga Mekar",
+            "target": "Kosan L Ciwaruga Wangi"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan K Ciwaruga Jaya",
+            "target": "Kosan M Ciwaruga Asoka"
+        },
+        {
+            "weight": 220,
+            "source": "Kosan L Ciwaruga Wangi",
+            "target": "Kosan N Ciwaruga Harmoni"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan L Ciwaruga Wangi",
+            "target": "Kosan Q Ciwaruga Cermai"
+        },
+        {
+            "weight": 280,
+            "source": "Kosan M Ciwaruga Asoka",
+            "target": "Kosan O Ciwaruga Bahagia"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan N Ciwaruga Harmoni",
+            "target": "Kosan P Ciwaruga Ceria"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan O Ciwaruga Bahagia",
+            "target": "Kosan Q Ciwaruga Cermai"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan O Ciwaruga Bahagia",
+            "target": "Kosan T Ciwaruga Sempurna"
+        },
+        {
+            "weight": 180,
+            "source": "Kosan P Ciwaruga Ceria",
+            "target": "Kosan R Ciwaruga Segar"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan Q Ciwaruga Cermai",
+            "target": "Kosan S Ciwaruga Sejahtera"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan R Ciwaruga Segar",
+            "target": "Kosan T Ciwaruga Sempurna"
+        }
+    ]
+}

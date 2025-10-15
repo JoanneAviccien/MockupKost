@@ -1,0 +1,212 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Polban"
+        },
+        {
+            "id": "Kosan A Sarijadi Asri"
+        },
+        {
+            "id": "Kosan B Sekeloa Indah"
+        },
+        {
+            "id": "Kosan C Cigadung Raya"
+        },
+        {
+            "id": "Kosan D Ciumbuleuit"
+        },
+        {
+            "id": "Kosan E Villa Sarijadi"
+        },
+        {
+            "id": "Kosan F Sarijadi Baru"
+        },
+        {
+            "id": "Kosan G Cigadung Permai"
+        },
+        {
+            "id": "Kosan H Sarijadi Indah"
+        },
+        {
+            "id": "Kosan I Ciumbuleuit Asri"
+        },
+        {
+            "id": "Kosan J Villa Sekeloa"
+        },
+        {
+            "id": "Kosan K Cigadung Hijau"
+        },
+        {
+            "id": "Kosan L Sarijadi Raya"
+        },
+        {
+            "id": "Kosan M Ciumbuleuit Baru"
+        },
+        {
+            "id": "Kosan N Sarijadi Permai"
+        },
+        {
+            "id": "Kosan O Villa Cigadung"
+        },
+        {
+            "id": "Kosan P Sarijadi Asih"
+        },
+        {
+            "id": "Kosan Q Ciumbuleuit Raya"
+        },
+        {
+            "id": "Kosan R Sarijadi Sentosa"
+        },
+        {
+            "id": "Kosan S Cigadung Asri"
+        },
+        {
+            "id": "Kosan T Villa Ciumbuleuit"
+        }
+    ],
+    "edges": [
+        {
+            "weight": 300,
+            "source": "Polban",
+            "target": "Kosan A Sarijadi Asri"
+        },
+        {
+            "weight": 500,
+            "source": "Polban",
+            "target": "Kosan B Sekeloa Indah"
+        },
+        {
+            "weight": 600,
+            "source": "Polban",
+            "target": "Kosan C Cigadung Raya"
+        },
+        {
+            "weight": 500,
+            "source": "Polban",
+            "target": "Kosan E Villa Sarijadi"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan A Sarijadi Asri",
+            "target": "Kosan B Sekeloa Indah"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan A Sarijadi Asri",
+            "target": "Kosan C Cigadung Raya"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan B Sekeloa Indah",
+            "target": "Kosan D Ciumbuleuit"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan C Cigadung Raya",
+            "target": "Kosan E Villa Sarijadi"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan C Cigadung Raya",
+            "target": "Kosan H Sarijadi Indah"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan D Ciumbuleuit",
+            "target": "Kosan F Sarijadi Baru"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan E Villa Sarijadi",
+            "target": "Kosan G Cigadung Permai"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan F Sarijadi Baru",
+            "target": "Kosan H Sarijadi Indah"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan F Sarijadi Baru",
+            "target": "Kosan K Cigadung Hijau"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan G Cigadung Permai",
+            "target": "Kosan I Ciumbuleuit Asri"
+        },
+        {
+            "weight": 150,
+            "source": "Kosan H Sarijadi Indah",
+            "target": "Kosan J Villa Sekeloa"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan I Ciumbuleuit Asri",
+            "target": "Kosan K Cigadung Hijau"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan I Ciumbuleuit Asri",
+            "target": "Kosan N Sarijadi Permai"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan J Villa Sekeloa",
+            "target": "Kosan L Sarijadi Raya"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan K Cigadung Hijau",
+            "target": "Kosan M Ciumbuleuit Baru"
+        },
+        {
+            "weight": 180,
+            "source": "Kosan L Sarijadi Raya",
+            "target": "Kosan N Sarijadi Permai"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan L Sarijadi Raya",
+            "target": "Kosan Q Ciumbuleuit Raya"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan M Ciumbuleuit Baru",
+            "target": "Kosan O Villa Cigadung"
+        },
+        {
+            "weight": 220,
+            "source": "Kosan N Sarijadi Permai",
+            "target": "Kosan P Sarijadi Asih"
+        },
+        {
+            "weight": 270,
+            "source": "Kosan O Villa Cigadung",
+            "target": "Kosan Q Ciumbuleuit Raya"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan O Villa Cigadung",
+            "target": "Kosan T Villa Ciumbuleuit"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan P Sarijadi Asih",
+            "target": "Kosan R Sarijadi Sentosa"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan Q Ciumbuleuit Raya",
+            "target": "Kosan S Cigadung Asri"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan R Sarijadi Sentosa",
+            "target": "Kosan T Villa Ciumbuleuit"
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Polban"
+        },
+        {
+            "id": "Kosan A Gegerkalong Asri"
+        },
+        {
+            "id": "Kosan B Gegerkalong Indah"
+        },
+        {
+            "id": "Kosan C Gegerkalong Baru"
+        },
+        {
+            "id": "Kosan D Gegerkalong Raya"
+        },
+        {
+            "id": "Kosan E Gegerkalong Permai"
+        },
+        {
+            "id": "Kosan F Gegerkalong Hijau"
+        },
+        {
+            "id": "Kosan G Gegerkalong Sentosa"
+        },
+        {
+            "id": "Kosan H Gegerkalong Asih"
+        },
+        {
+            "id": "Kosan I Gegerkalong Sari"
+        },
+        {
+            "id": "Kosan J Gegerkalong Mekar"
+        },
+        {
+            "id": "Kosan K Gegerkalong Jaya"
+        },
+        {
+            "id": "Kosan L Gegerkalong Wangi"
+        },
+        {
+            "id": "Kosan M Gegerkalong Asoka"
+        },
+        {
+            "id": "Kosan N Gegerkalong Harmoni"
+        },
+        {
+            "id": "Kosan O Gegerkalong Bahagia"
+        },
+        {
+            "id": "Kosan P Gegerkalong Ceria"
+        },
+        {
+            "id": "Kosan Q Gegerkalong Cermai"
+        },
+        {
+            "id": "Kosan R Gegerkalong Segar"
+        },
+        {
+            "id": "Kosan S Gegerkalong Sejahtera"
+        },
+        {
+            "id": "Kosan T Gegerkalong Sempurna"
+        }
+    ],
+    "edges": [
+        {
+            "weight": 450,
+            "source": "Polban",
+            "target": "Kosan A Gegerkalong Asri"
+        },
+        {
+            "weight": 550,
+            "source": "Polban",
+            "target": "Kosan B Gegerkalong Indah"
+        },
+        {
+            "weight": 650,
+            "source": "Polban",
+            "target": "Kosan C Gegerkalong Baru"
+        },
+        {
+            "weight": 600,
+            "source": "Polban",
+            "target": "Kosan E Gegerkalong Permai"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan A Gegerkalong Asri",
+            "target": "Kosan B Gegerkalong Indah"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan A Gegerkalong Asri",
+            "target": "Kosan C Gegerkalong Baru"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan B Gegerkalong Indah",
+            "target": "Kosan D Gegerkalong Raya"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan C Gegerkalong Baru",
+            "target": "Kosan E Gegerkalong Permai"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan C Gegerkalong Baru",
+            "target": "Kosan H Gegerkalong Asih"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan D Gegerkalong Raya",
+            "target": "Kosan F Gegerkalong Hijau"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan E Gegerkalong Permai",
+            "target": "Kosan G Gegerkalong Sentosa"
+        },
+        {
+            "weight": 180,
+            "source": "Kosan F Gegerkalong Hijau",
+            "target": "Kosan H Gegerkalong Asih"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan F Gegerkalong Hijau",
+            "target": "Kosan K Gegerkalong Jaya"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan G Gegerkalong Sentosa",
+            "target": "Kosan I Gegerkalong Sari"
+        },
+        {
+            "weight": 150,
+            "source": "Kosan H Gegerkalong Asih",
+            "target": "Kosan J Gegerkalong Mekar"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan I Gegerkalong Sari",
+            "target": "Kosan K Gegerkalong Jaya"
+        },
+        {
+            "weight": 350,
+            "source": "Kosan I Gegerkalong Sari",
+            "target": "Kosan N Gegerkalong Harmoni"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan J Gegerkalong Mekar",
+            "target": "Kosan L Gegerkalong Wangi"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan K Gegerkalong Jaya",
+            "target": "Kosan M Gegerkalong Asoka"
+        },
+        {
+            "weight": 220,
+            "source": "Kosan L Gegerkalong Wangi",
+            "target": "Kosan N Gegerkalong Harmoni"
+        },
+        {
+            "weight": 300,
+            "source": "Kosan L Gegerkalong Wangi",
+            "target": "Kosan Q Gegerkalong Cermai"
+        },
+        {
+            "weight": 280,
+            "source": "Kosan M Gegerkalong Asoka",
+            "target": "Kosan O Gegerkalong Bahagia"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan N Gegerkalong Harmoni",
+            "target": "Kosan P Gegerkalong Ceria"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan O Gegerkalong Bahagia",
+            "target": "Kosan Q Gegerkalong Cermai"
+        },
+        {
+            "weight": 400,
+            "source": "Kosan O Gegerkalong Bahagia",
+            "target": "Kosan T Gegerkalong Sempurna"
+        },
+        {
+            "weight": 180,
+            "source": "Kosan P Gegerkalong Ceria",
+            "target": "Kosan R Gegerkalong Segar"
+        },
+        {
+            "weight": 200,
+            "source": "Kosan Q Gegerkalong Cermai",
+            "target": "Kosan S Gegerkalong Sejahtera"
+        },
+        {
+            "weight": 250,
+            "source": "Kosan R Gegerkalong Segar",
+            "target": "Kosan T Gegerkalong Sempurna"
+        }
+    ]
+}
