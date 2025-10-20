@@ -7,206 +7,130 @@
             "id": "Polban"
         },
         {
-            "id": "Kosan A Ciwaruga Asri"
+            "id": "Kosan Cibogo SM91"
         },
         {
-            "id": "Kosan B Ciwaruga Indah"
+            "id": "Kosan Cibogo Atas"
         },
         {
-            "id": "Kosan C Ciwaruga Baru"
+            "id": "Kosan Vika Cibogo Pperintis Sarijadi"
         },
         {
-            "id": "Kosan D Ciwaruga Raya"
+            "id": "Kosan Na Jeges 98 Babakan"
         },
         {
-            "id": "Kosan E Ciwaruga Permai"
+            "id": "Kosan Chelsea Home"
         },
         {
-            "id": "Kosan F Ciwaruga Hijau"
+            "id": "Kosan My Home"
         },
         {
-            "id": "Kosan G Ciwaruga Sentosa"
+            "id": "Kosan Ikhwan"
         },
         {
-            "id": "Kosan H Ciwaruga Asih"
+            "id": "Kosan Sariwangi Cihanjuang"
         },
         {
-            "id": "Kosan I Ciwaruga Sari"
+            "id": "Kosan Cihanjuang"
         },
         {
-            "id": "Kosan J Ciwaruga Mekar"
+            "id": "Kosan Sariwangi Indah"
         },
         {
-            "id": "Kosan K Ciwaruga Jaya"
+            "id": "Kosan Nyonya Residence"
         },
         {
-            "id": "Kosan L Ciwaruga Wangi"
+            "id": "Kosan Aibay"
         },
         {
-            "id": "Kosan M Ciwaruga Asoka"
-        },
-        {
-            "id": "Kosan N Ciwaruga Harmoni"
-        },
-        {
-            "id": "Kosan O Ciwaruga Bahagia"
-        },
-        {
-            "id": "Kosan P Ciwaruga Ceria"
-        },
-        {
-            "id": "Kosan Q Ciwaruga Cermai"
-        },
-        {
-            "id": "Kosan R Ciwaruga Segar"
-        },
-        {
-            "id": "Kosan S Ciwaruga Sejahtera"
-        },
-        {
-            "id": "Kosan T Ciwaruga Sempurna"
+            "id": "Kosan Mutiara"
         }
     ],
     "edges": [
         {
-            "weight": 400,
+            "weight": 800,
             "source": "Polban",
-            "target": "Kosan A Ciwaruga Asri"
+            "target": "Kosan Cibogo SM91"
         },
         {
-            "weight": 500,
+            "weight": 820,
             "source": "Polban",
-            "target": "Kosan B Ciwaruga Indah"
+            "target": "Kosan Cibogo Atas"
         },
         {
-            "weight": 600,
+            "weight": 850,
             "source": "Polban",
-            "target": "Kosan C Ciwaruga Baru"
+            "target": "Kosan Vika Cibogo Pperintis Sarijadi"
         },
         {
-            "weight": 550,
+            "weight": 1200,
             "source": "Polban",
-            "target": "Kosan E Ciwaruga Permai"
+            "target": "Kosan Sariwangi Cihanjuang"
         },
         {
-            "weight": 200,
-            "source": "Kosan A Ciwaruga Asri",
-            "target": "Kosan B Ciwaruga Indah"
+            "weight": 1250,
+            "source": "Polban",
+            "target": "Kosan Cihanjuang"
         },
         {
-            "weight": 300,
-            "source": "Kosan A Ciwaruga Asri",
-            "target": "Kosan C Ciwaruga Baru"
+            "weight": 1300,
+            "source": "Polban",
+            "target": "Kosan Sariwangi Indah"
         },
         {
-            "weight": 250,
-            "source": "Kosan B Ciwaruga Indah",
-            "target": "Kosan D Ciwaruga Raya"
+            "weight": 100,
+            "source": "Kosan Cibogo SM91",
+            "target": "Kosan Cibogo Atas"
         },
         {
-            "weight": 350,
-            "source": "Kosan C Ciwaruga Baru",
-            "target": "Kosan E Ciwaruga Permai"
-        },
-        {
-            "weight": 400,
-            "source": "Kosan C Ciwaruga Baru",
-            "target": "Kosan H Ciwaruga Asih"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan D Ciwaruga Raya",
-            "target": "Kosan F Ciwaruga Hijau"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan E Ciwaruga Permai",
-            "target": "Kosan G Ciwaruga Sentosa"
+            "weight": 170,
+            "source": "Kosan Cibogo SM91",
+            "target": "Kosan Chelsea Home"
         },
         {
             "weight": 180,
-            "source": "Kosan F Ciwaruga Hijau",
-            "target": "Kosan H Ciwaruga Asih"
+            "source": "Kosan Cibogo SM91",
+            "target": "Kosan Ikhwan"
         },
         {
-            "weight": 300,
-            "source": "Kosan F Ciwaruga Hijau",
-            "target": "Kosan K Ciwaruga Jaya"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan G Ciwaruga Sentosa",
-            "target": "Kosan I Ciwaruga Sari"
+            "weight": 120,
+            "source": "Kosan Cibogo Atas",
+            "target": "Kosan Vika Cibogo Pperintis Sarijadi"
         },
         {
             "weight": 150,
-            "source": "Kosan H Ciwaruga Asih",
-            "target": "Kosan J Ciwaruga Mekar"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan I Ciwaruga Sari",
-            "target": "Kosan K Ciwaruga Jaya"
-        },
-        {
-            "weight": 350,
-            "source": "Kosan I Ciwaruga Sari",
-            "target": "Kosan N Ciwaruga Harmoni"
+            "source": "Kosan Cibogo Atas",
+            "target": "Kosan My Home"
         },
         {
             "weight": 200,
-            "source": "Kosan J Ciwaruga Mekar",
-            "target": "Kosan L Ciwaruga Wangi"
+            "source": "Kosan Vika Cibogo Pperintis Sarijadi",
+            "target": "Kosan Na Jeges 98 Babakan"
         },
         {
-            "weight": 300,
-            "source": "Kosan K Ciwaruga Jaya",
-            "target": "Kosan M Ciwaruga Asoka"
+            "weight": 150,
+            "source": "Kosan Sariwangi Cihanjuang",
+            "target": "Kosan Cihanjuang"
         },
         {
-            "weight": 220,
-            "source": "Kosan L Ciwaruga Wangi",
-            "target": "Kosan N Ciwaruga Harmoni"
-        },
-        {
-            "weight": 300,
-            "source": "Kosan L Ciwaruga Wangi",
-            "target": "Kosan Q Ciwaruga Cermai"
-        },
-        {
-            "weight": 280,
-            "source": "Kosan M Ciwaruga Asoka",
-            "target": "Kosan O Ciwaruga Bahagia"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan N Ciwaruga Harmoni",
-            "target": "Kosan P Ciwaruga Ceria"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan O Ciwaruga Bahagia",
-            "target": "Kosan Q Ciwaruga Cermai"
-        },
-        {
-            "weight": 400,
-            "source": "Kosan O Ciwaruga Bahagia",
-            "target": "Kosan T Ciwaruga Sempurna"
+            "weight": 130,
+            "source": "Kosan Sariwangi Cihanjuang",
+            "target": "Kosan Mutiara"
         },
         {
             "weight": 180,
-            "source": "Kosan P Ciwaruga Ceria",
-            "target": "Kosan R Ciwaruga Segar"
+            "source": "Kosan Cihanjuang",
+            "target": "Kosan Sariwangi Indah"
+        },
+        {
+            "weight": 160,
+            "source": "Kosan Cihanjuang",
+            "target": "Kosan Aibay"
         },
         {
             "weight": 200,
-            "source": "Kosan Q Ciwaruga Cermai",
-            "target": "Kosan S Ciwaruga Sejahtera"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan R Ciwaruga Segar",
-            "target": "Kosan T Ciwaruga Sempurna"
+            "source": "Kosan Sariwangi Indah",
+            "target": "Kosan Nyonya Residence"
         }
     ]
 }

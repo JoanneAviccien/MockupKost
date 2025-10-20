@@ -7,206 +7,664 @@
             "id": "Polban"
         },
         {
-            "id": "Kosan A Sarijadi Asri"
+            "id": "Kosan Dy Culture Maranatha"
         },
         {
-            "id": "Kosan B Sekeloa Indah"
+            "id": "Kosan Maranatha"
         },
         {
-            "id": "Kosan C Cigadung Raya"
+            "id": "Kosan The Setraria One Maranatha"
         },
         {
-            "id": "Kosan D Ciumbuleuit"
+            "id": "Kosan Grhya Sahitya Sarijadi"
         },
         {
-            "id": "Kosan E Villa Sarijadi"
+            "id": "Kosan Sarijadi Raya"
         },
         {
-            "id": "Kosan F Sarijadi Baru"
+            "id": "Kosan Sarijadi"
         },
         {
-            "id": "Kosan G Cigadung Permai"
+            "id": "Kosan Bu Nita Sarijadi"
         },
         {
-            "id": "Kosan H Sarijadi Indah"
+            "id": "Kosan Erka Sarijadi"
         },
         {
-            "id": "Kosan I Ciumbuleuit Asri"
+            "id": "Kosan Bapak Yusup Sarijadi"
         },
         {
-            "id": "Kosan J Villa Sekeloa"
+            "id": "Kosan 75 Sarijadi"
         },
         {
-            "id": "Kosan K Cigadung Hijau"
+            "id": "Kosan Sarijadi Ummu Asfar"
         },
         {
-            "id": "Kosan L Sarijadi Raya"
+            "id": "Kosan Sarijadi Cijerokaso"
         },
         {
-            "id": "Kosan M Ciumbuleuit Baru"
+            "id": "Kosan Pariwisata 15"
         },
         {
-            "id": "Kosan N Sarijadi Permai"
+            "id": "Kosan Parwis 22"
         },
         {
-            "id": "Kosan O Villa Cigadung"
+            "id": "Kosan Frank House"
         },
         {
-            "id": "Kosan P Sarijadi Asih"
+            "id": "Kosan Admasetiabudhi Garden View"
         },
         {
-            "id": "Kosan Q Ciumbuleuit Raya"
+            "id": "Kosan Summer House"
         },
         {
-            "id": "Kosan R Sarijadi Sentosa"
+            "id": "Kosan Rizka I"
         },
         {
-            "id": "Kosan S Cigadung Asri"
+            "id": "Kosan Ana"
         },
         {
-            "id": "Kosan T Villa Ciumbuleuit"
+            "id": "Kosan Budi Indah 3"
+        },
+        {
+            "id": "Kosan Orange"
+        },
+        {
+            "id": "Kosan Zidni"
+        },
+        {
+            "id": "Kosan Sarimadu Barat"
+        },
+        {
+            "id": "Kosan Bu Neneng"
+        },
+        {
+            "id": "Kosan Bu Hj Neneng"
+        },
+        {
+            "id": "Kosan Beat"
+        },
+        {
+            "id": "Kosan Bsp"
+        },
+        {
+            "id": "Kosan Jimin"
+        },
+        {
+            "id": "Kosan DaKost Single"
+        },
+        {
+            "id": "Kosan Sarimah"
+        },
+        {
+            "id": "Kosan Bu Sumi"
+        },
+        {
+            "id": "Kosan Umi"
+        },
+        {
+            "id": "Kosan Sari Asih"
+        },
+        {
+            "id": "Kosan Green Home Sari Asih"
+        },
+        {
+            "id": "Kosan Leskos"
+        },
+        {
+            "id": "Kosan A Fadhil"
+        },
+        {
+            "id": "Kosan Nyaman Murah"
+        },
+        {
+            "id": "Kosan Pondok Lathifah"
+        },
+        {
+            "id": "Kosan Djapa"
+        },
+        {
+            "id": "Kosan Aamir"
+        },
+        {
+            "id": "Kosan Pondok Arjuna"
+        },
+        {
+            "id": "Kosan Pondok Hijau"
+        },
+        {
+            "id": "Kosan Elite Ddr 203"
+        },
+        {
+            "id": "Kosan Willy"
+        },
+        {
+            "id": "Kosan Sri Yuningsih"
+        },
+        {
+            "id": "Kosan Graha 171"
+        },
+        {
+            "id": "Kosan Peach Home"
+        },
+        {
+            "id": "Kosan Amma 2"
+        },
+        {
+            "id": "Kosan Karizma Guesthouse"
+        },
+        {
+            "id": "Kosan Wisma Komando2"
+        },
+        {
+            "id": "Kosan Icarus 1"
+        },
+        {
+            "id": "Kosan Rumah De Ajeng"
+        },
+        {
+            "id": "Kosan Fortuna Residence"
+        },
+        {
+            "id": "Kosan Bu Moen"
+        },
+        {
+            "id": "Kosan Casa De Lemon"
+        },
+        {
+            "id": "Kosan Yugi Home 42"
+        },
+        {
+            "id": "Kosan Ami"
+        },
+        {
+            "id": "Kosan Pink"
+        },
+        {
+            "id": "Kosan Gentra"
+        },
+        {
+            "id": "Kosan Mitha"
+        },
+        {
+            "id": "Kosan ApiQ"
+        },
+        {
+            "id": "Kosan DI 3/25"
+        },
+        {
+            "id": "Kosan An"
+        },
+        {
+            "id": "Kosan Om Fari"
+        },
+        {
+            "id": "Kosan Ibu Fitri"
+        },
+        {
+            "id": "Kosan Paviliun Pondok Barokah"
+        },
+        {
+            "id": "Kosan Sri M"
+        },
+        {
+            "id": "Kosan Yana"
+        },
+        {
+            "id": "Kosan Bidan Merry"
+        },
+        {
+            "id": "Kosan Niji House"
+        },
+        {
+            "id": "Kosan Indilar"
+        },
+        {
+            "id": "Kosan Almeera"
+        },
+        {
+            "id": "Kosan Tulip 2"
+        },
+        {
+            "id": "Kosan Permai"
+        },
+        {
+            "id": "Kosan Ibu Nina"
+        },
+        {
+            "id": "Kosan Oma Nuy"
         }
     ],
     "edges": [
         {
-            "weight": 300,
+            "weight": 350,
             "source": "Polban",
-            "target": "Kosan A Sarijadi Asri"
+            "target": "Kosan Dy Culture Maranatha"
+        },
+        {
+            "weight": 370,
+            "source": "Polban",
+            "target": "Kosan Maranatha"
+        },
+        {
+            "weight": 380,
+            "source": "Polban",
+            "target": "Kosan The Setraria One Maranatha"
+        },
+        {
+            "weight": 420,
+            "source": "Polban",
+            "target": "Kosan Grhya Sahitya Sarijadi"
+        },
+        {
+            "weight": 450,
+            "source": "Polban",
+            "target": "Kosan Sarijadi Raya"
+        },
+        {
+            "weight": 460,
+            "source": "Polban",
+            "target": "Kosan Sarijadi"
+        },
+        {
+            "weight": 480,
+            "source": "Polban",
+            "target": "Kosan Bu Nita Sarijadi"
         },
         {
             "weight": 500,
             "source": "Polban",
-            "target": "Kosan B Sekeloa Indah"
+            "target": "Kosan Erka Sarijadi"
+        },
+        {
+            "weight": 520,
+            "source": "Polban",
+            "target": "Kosan Bapak Yusup Sarijadi"
+        },
+        {
+            "weight": 530,
+            "source": "Polban",
+            "target": "Kosan 75 Sarijadi"
+        },
+        {
+            "weight": 550,
+            "source": "Polban",
+            "target": "Kosan Sarijadi Ummu Asfar"
+        },
+        {
+            "weight": 580,
+            "source": "Polban",
+            "target": "Kosan Sarijadi Cijerokaso"
         },
         {
             "weight": 600,
             "source": "Polban",
-            "target": "Kosan C Cigadung Raya"
+            "target": "Kosan Pariwisata 15"
         },
         {
-            "weight": 500,
+            "weight": 610,
             "source": "Polban",
-            "target": "Kosan E Villa Sarijadi"
+            "target": "Kosan Parwis 22"
         },
         {
-            "weight": 250,
-            "source": "Kosan A Sarijadi Asri",
-            "target": "Kosan B Sekeloa Indah"
+            "weight": 630,
+            "source": "Polban",
+            "target": "Kosan Frank House"
         },
         {
-            "weight": 400,
-            "source": "Kosan A Sarijadi Asri",
-            "target": "Kosan C Cigadung Raya"
-        },
-        {
-            "weight": 300,
-            "source": "Kosan B Sekeloa Indah",
-            "target": "Kosan D Ciumbuleuit"
-        },
-        {
-            "weight": 350,
-            "source": "Kosan C Cigadung Raya",
-            "target": "Kosan E Villa Sarijadi"
-        },
-        {
-            "weight": 400,
-            "source": "Kosan C Cigadung Raya",
-            "target": "Kosan H Sarijadi Indah"
+            "weight": 650,
+            "source": "Polban",
+            "target": "Kosan Admasetiabudhi Garden View"
         },
         {
             "weight": 200,
-            "source": "Kosan D Ciumbuleuit",
-            "target": "Kosan F Sarijadi Baru"
+            "source": "Kosan Dy Culture Maranatha",
+            "target": "Kosan Grhya Sahitya Sarijadi"
         },
         {
-            "weight": 300,
-            "source": "Kosan E Villa Sarijadi",
-            "target": "Kosan G Cigadung Permai"
+            "weight": 120,
+            "source": "Kosan Dy Culture Maranatha",
+            "target": "Kosan Sri M"
         },
         {
-            "weight": 250,
-            "source": "Kosan F Sarijadi Baru",
-            "target": "Kosan H Sarijadi Indah"
+            "weight": 70,
+            "source": "Kosan Maranatha",
+            "target": "Kosan The Setraria One Maranatha"
         },
         {
-            "weight": 350,
-            "source": "Kosan F Sarijadi Baru",
-            "target": "Kosan K Cigadung Hijau"
+            "weight": 90,
+            "source": "Kosan Maranatha",
+            "target": "Kosan Beat"
         },
         {
-            "weight": 200,
-            "source": "Kosan G Cigadung Permai",
-            "target": "Kosan I Ciumbuleuit Asri"
+            "weight": 90,
+            "source": "Kosan Maranatha",
+            "target": "Kosan Indilar"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan The Setraria One Maranatha",
+            "target": "Kosan Bidan Merry"
         },
         {
             "weight": 150,
-            "source": "Kosan H Sarijadi Indah",
-            "target": "Kosan J Villa Sekeloa"
+            "source": "Kosan Grhya Sahitya Sarijadi",
+            "target": "Kosan Sarijadi Cijerokaso"
         },
         {
-            "weight": 300,
-            "source": "Kosan I Ciumbuleuit Asri",
-            "target": "Kosan K Cigadung Hijau"
+            "weight": 100,
+            "source": "Kosan Grhya Sahitya Sarijadi",
+            "target": "Kosan Ibu Fitri"
         },
         {
-            "weight": 400,
-            "source": "Kosan I Ciumbuleuit Asri",
-            "target": "Kosan N Sarijadi Permai"
+            "weight": 120,
+            "source": "Kosan Sarijadi Raya",
+            "target": "Kosan Sarijadi"
         },
         {
-            "weight": 200,
-            "source": "Kosan J Villa Sekeloa",
-            "target": "Kosan L Sarijadi Raya"
+            "weight": 90,
+            "source": "Kosan Sarijadi Raya",
+            "target": "Kosan Erka Sarijadi"
         },
         {
-            "weight": 250,
-            "source": "Kosan K Cigadung Hijau",
-            "target": "Kosan M Ciumbuleuit Baru"
+            "weight": 110,
+            "source": "Kosan Sarijadi Raya",
+            "target": "Kosan Rizka I"
         },
         {
-            "weight": 180,
-            "source": "Kosan L Sarijadi Raya",
-            "target": "Kosan N Sarijadi Permai"
+            "weight": 120,
+            "source": "Kosan Sarijadi Raya",
+            "target": "Kosan Nyaman Murah"
         },
         {
-            "weight": 350,
-            "source": "Kosan L Sarijadi Raya",
-            "target": "Kosan Q Ciumbuleuit Raya"
+            "weight": 100,
+            "source": "Kosan Sarijadi Raya",
+            "target": "Kosan Ami"
         },
         {
-            "weight": 300,
-            "source": "Kosan M Ciumbuleuit Baru",
-            "target": "Kosan O Villa Cigadung"
+            "weight": 100,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan Bu Nita Sarijadi"
         },
         {
-            "weight": 220,
-            "source": "Kosan N Sarijadi Permai",
-            "target": "Kosan P Sarijadi Asih"
+            "weight": 140,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan Summer House"
         },
         {
-            "weight": 270,
-            "source": "Kosan O Villa Cigadung",
-            "target": "Kosan Q Ciumbuleuit Raya"
+            "weight": 160,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan Bu Hj Neneng"
         },
         {
-            "weight": 400,
-            "source": "Kosan O Villa Cigadung",
-            "target": "Kosan T Villa Ciumbuleuit"
+            "weight": 120,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan DaKost Single"
         },
         {
-            "weight": 200,
-            "source": "Kosan P Sarijadi Asih",
-            "target": "Kosan R Sarijadi Sentosa"
+            "weight": 150,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan Green Home Sari Asih"
         },
         {
-            "weight": 250,
-            "source": "Kosan Q Ciumbuleuit Raya",
-            "target": "Kosan S Cigadung Asri"
+            "weight": 120,
+            "source": "Kosan Sarijadi",
+            "target": "Kosan Casa De Lemon"
         },
         {
-            "weight": 300,
-            "source": "Kosan R Sarijadi Sentosa",
-            "target": "Kosan T Villa Ciumbuleuit"
+            "weight": 130,
+            "source": "Kosan Bu Nita Sarijadi",
+            "target": "Kosan Bapak Yusup Sarijadi"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Bu Nita Sarijadi",
+            "target": "Kosan Ana"
+        },
+        {
+            "weight": 110,
+            "source": "Kosan Bu Nita Sarijadi",
+            "target": "Kosan Djapa"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Erka Sarijadi",
+            "target": "Kosan Orange"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Erka Sarijadi",
+            "target": "Kosan Gentra"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Bapak Yusup Sarijadi",
+            "target": "Kosan ApiQ"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan 75 Sarijadi",
+            "target": "Kosan Sarijadi Ummu Asfar"
+        },
+        {
+            "weight": 130,
+            "source": "Kosan 75 Sarijadi",
+            "target": "Kosan Budi Indah 3"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan 75 Sarijadi",
+            "target": "Kosan Pondok Hijau"
+        },
+        {
+            "weight": 140,
+            "source": "Kosan 75 Sarijadi",
+            "target": "Kosan Fortuna Residence"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan 75 Sarijadi",
+            "target": "Kosan Oma Nuy"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Sarijadi Ummu Asfar",
+            "target": "Kosan Jimin"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Sarijadi Ummu Asfar",
+            "target": "Kosan Amma 2"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Sarijadi Ummu Asfar",
+            "target": "Kosan Tulip 2"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Sarijadi Cijerokaso",
+            "target": "Kosan An"
+        },
+        {
+            "weight": 60,
+            "source": "Kosan Pariwisata 15",
+            "target": "Kosan Parwis 22"
+        },
+        {
+            "weight": 120,
+            "source": "Kosan Pariwisata 15",
+            "target": "Kosan Zidni"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Pariwisata 15",
+            "target": "Kosan Rumah De Ajeng"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Parwis 22",
+            "target": "Kosan Sarimadu Barat"
+        },
+        {
+            "weight": 120,
+            "source": "Kosan Parwis 22",
+            "target": "Kosan Wisma Komando2"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Frank House",
+            "target": "Kosan Admasetiabudhi Garden View"
+        },
+        {
+            "weight": 120,
+            "source": "Kosan Frank House",
+            "target": "Kosan Willy"
+        },
+        {
+            "weight": 140,
+            "source": "Kosan Admasetiabudhi Garden View",
+            "target": "Kosan Bsp"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Admasetiabudhi Garden View",
+            "target": "Kosan Graha 171"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Bu Neneng",
+            "target": "Kosan Bu Hj Neneng"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Sarimah",
+            "target": "Kosan Bu Sumi"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Bu Sumi",
+            "target": "Kosan Umi"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Umi",
+            "target": "Kosan Sari Asih"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan Sari Asih",
+            "target": "Kosan Green Home Sari Asih"
+        },
+        {
+            "weight": 60,
+            "source": "Kosan Leskos",
+            "target": "Kosan A Fadhil"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan A Fadhil",
+            "target": "Kosan Nyaman Murah"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Pondok Lathifah",
+            "target": "Kosan Djapa"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Aamir",
+            "target": "Kosan Pondok Arjuna"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan Pondok Arjuna",
+            "target": "Kosan Pondok Hijau"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Elite Ddr 203",
+            "target": "Kosan Willy"
+        },
+        {
+            "weight": 110,
+            "source": "Kosan Sri Yuningsih",
+            "target": "Kosan Graha 171"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Peach Home",
+            "target": "Kosan Amma 2"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Karizma Guesthouse",
+            "target": "Kosan Wisma Komando2"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Icarus 1",
+            "target": "Kosan Rumah De Ajeng"
+        },
+        {
+            "weight": 85,
+            "source": "Kosan Bu Moen",
+            "target": "Kosan Casa De Lemon"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan Yugi Home 42",
+            "target": "Kosan Ami"
+        },
+        {
+            "weight": 60,
+            "source": "Kosan Pink",
+            "target": "Kosan Gentra"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Mitha",
+            "target": "Kosan ApiQ"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan DI 3/25",
+            "target": "Kosan An"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Om Fari",
+            "target": "Kosan Ibu Fitri"
+        },
+        {
+            "weight": 100,
+            "source": "Kosan Paviliun Pondok Barokah",
+            "target": "Kosan Sri M"
+        },
+        {
+            "weight": 90,
+            "source": "Kosan Yana",
+            "target": "Kosan Bidan Merry"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Niji House",
+            "target": "Kosan Indilar"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan Almeera",
+            "target": "Kosan Tulip 2"
+        },
+        {
+            "weight": 80,
+            "source": "Kosan Permai",
+            "target": "Kosan Ibu Nina"
+        },
+        {
+            "weight": 70,
+            "source": "Kosan Ibu Nina",
+            "target": "Kosan Oma Nuy"
         }
     ]
 }

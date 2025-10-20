@@ -11,185 +11,305 @@ sarijadi = nx.Graph()
 ciwaruga = nx.Graph()
 gegerkalong = nx.Graph()
 
-nodes_1 = [
+# Cluster Sarijadi
+sarijadi_nodes = [
     "Polban",
-    "Kosan A Sarijadi Asri",
-    "Kosan B Sekeloa Indah",
-    "Kosan C Cigadung Raya",
-    "Kosan D Ciumbuleuit",
-    "Kosan E Villa Sarijadi",
-    "Kosan F Sarijadi Baru",
-    "Kosan G Cigadung Permai",
-    "Kosan H Sarijadi Indah",
-    "Kosan I Ciumbuleuit Asri",
-    "Kosan J Villa Sekeloa",
-    "Kosan K Cigadung Hijau",
-    "Kosan L Sarijadi Raya",
-    "Kosan M Ciumbuleuit Baru",
-    "Kosan N Sarijadi Permai",
-    "Kosan O Villa Cigadung",
-    "Kosan P Sarijadi Asih",
-    "Kosan Q Ciumbuleuit Raya",
-    "Kosan R Sarijadi Sentosa",
-    "Kosan S Cigadung Asri",
-    "Kosan T Villa Ciumbuleuit"
+    "Kosan Dy Culture Maranatha",
+    "Kosan Maranatha",
+    "Kosan The Setraria One Maranatha",
+    "Kosan Grhya Sahitya Sarijadi",
+    "Kosan Sarijadi Raya",
+    "Kosan Sarijadi",
+    "Kosan Bu Nita Sarijadi",
+    "Kosan Erka Sarijadi",
+    "Kosan Bapak Yusup Sarijadi",
+    "Kosan 75 Sarijadi",
+    "Kosan Sarijadi Ummu Asfar",
+    "Kosan Sarijadi Cijerokaso",
+    "Kosan Pariwisata 15",
+    "Kosan Parwis 22",
+    "Kosan Frank House",
+    "Kosan Admasetiabudhi Garden View",
+    "Kosan Summer House",
+    "Kosan Rizka I",
+    "Kosan Ana",
+    "Kosan Budi Indah 3",
+    "Kosan Orange",
+    "Kosan Zidni",
+    "Kosan Sarimadu Barat",
+    "Kosan Bu Neneng",
+    "Kosan Bu Hj Neneng",
+    "Kosan Beat",
+    "Kosan Bsp",
+    "Kosan Jimin",
+    "Kosan DaKost Single",
+    "Kosan Sarimah",
+    "Kosan Bu Sumi",
+    "Kosan Umi",
+    "Kosan Sari Asih",
+    "Kosan Green Home Sari Asih",
+    "Kosan Leskos",
+    "Kosan A Fadhil",
+    "Kosan Nyaman Murah",
+    "Kosan Pondok Lathifah",
+    "Kosan Djapa",
+    "Kosan Aamir",
+    "Kosan Pondok Arjuna",
+    "Kosan Pondok Hijau",
+    "Kosan Elite Ddr 203",
+    "Kosan Willy",
+    "Kosan Sri Yuningsih",
+    "Kosan Graha 171",
+    "Kosan Peach Home",
+    "Kosan Amma 2",
+    "Kosan Karizma Guesthouse",
+    "Kosan Wisma Komando2",
+    "Kosan Icarus 1",
+    "Kosan Rumah De Ajeng",
+    "Kosan Fortuna Residence",
+    "Kosan Bu Moen",
+    "Kosan Casa De Lemon",
+    "Kosan Yugi Home 42",
+    "Kosan Ami",
+    "Kosan Pink",
+    "Kosan Gentra",
+    "Kosan Mitha",
+    "Kosan ApiQ",
+    "Kosan DI 3/25",
+    "Kosan An",
+    "Kosan Om Fari",
+    "Kosan Ibu Fitri",
+    "Kosan Paviliun Pondok Barokah",
+    "Kosan Sri M",
+    "Kosan Yana",
+    "Kosan Bidan Merry",
+    "Kosan Niji House",
+    "Kosan Indilar",
+    "Kosan Almeera",
+    "Kosan Tulip 2",
+    "Kosan Permai",
+    "Kosan Ibu Nina",
+    "Kosan Oma Nuy"
 ]
 
-sarijadi.add_nodes_from(nodes_1)
+sarijadi_edges = [
+    # Polban ke kosan Sarijadi
+    ("Polban", "Kosan Dy Culture Maranatha", 350),
+    ("Polban", "Kosan Maranatha", 370),
+    ("Polban", "Kosan The Setraria One Maranatha", 380),
+    ("Polban", "Kosan Grhya Sahitya Sarijadi", 420),
+    ("Polban", "Kosan Sarijadi Raya", 450),
+    ("Polban", "Kosan Sarijadi", 460),
+    ("Polban", "Kosan Bu Nita Sarijadi", 480),
+    ("Polban", "Kosan Erka Sarijadi", 500),
+    ("Polban", "Kosan Bapak Yusup Sarijadi", 520),
+    ("Polban", "Kosan 75 Sarijadi", 530),
+    ("Polban", "Kosan Sarijadi Ummu Asfar", 550),
+    ("Polban", "Kosan Sarijadi Cijerokaso", 580),
+    ("Polban", "Kosan Pariwisata 15", 600),
+    ("Polban", "Kosan Parwis 22", 610),
+    ("Polban", "Kosan Frank House", 630),
+    ("Polban", "Kosan Admasetiabudhi Garden View", 650),
 
-edges_1 = [
-    ("Polban", "Kosan A Sarijadi Asri", 300),
-    ("Polban", "Kosan B Sekeloa Indah", 500),
-    ("Polban", "Kosan C Cigadung Raya", 600),
-    ("Kosan A Sarijadi Asri", "Kosan B Sekeloa Indah", 250),
-    ("Kosan A Sarijadi Asri", "Kosan C Cigadung Raya", 400),
-    ("Kosan B Sekeloa Indah", "Kosan D Ciumbuleuit", 300),
-    ("Kosan C Cigadung Raya", "Kosan E Villa Sarijadi", 350),
-    ("Kosan D Ciumbuleuit", "Kosan F Sarijadi Baru", 200),
-    ("Kosan E Villa Sarijadi", "Kosan G Cigadung Permai", 300),
-    ("Kosan F Sarijadi Baru", "Kosan H Sarijadi Indah", 250),
-    ("Kosan G Cigadung Permai", "Kosan I Ciumbuleuit Asri", 200),
-    ("Kosan H Sarijadi Indah", "Kosan J Villa Sekeloa", 150),
-    ("Kosan I Ciumbuleuit Asri", "Kosan K Cigadung Hijau", 300),
-    ("Kosan J Villa Sekeloa", "Kosan L Sarijadi Raya", 200),
-    ("Kosan K Cigadung Hijau", "Kosan M Ciumbuleuit Baru", 250),
-    ("Kosan L Sarijadi Raya", "Kosan N Sarijadi Permai", 180),
-    ("Kosan M Ciumbuleuit Baru", "Kosan O Villa Cigadung", 300),
-    ("Kosan N Sarijadi Permai", "Kosan P Sarijadi Asih", 220),
-    ("Kosan O Villa Cigadung", "Kosan Q Ciumbuleuit Raya", 270),
-    ("Kosan P Sarijadi Asih", "Kosan R Sarijadi Sentosa", 200),
-    ("Kosan Q Ciumbuleuit Raya", "Kosan S Cigadung Asri", 250),
-    ("Kosan R Sarijadi Sentosa", "Kosan T Villa Ciumbuleuit", 300),
-    ("Polban", "Kosan E Villa Sarijadi", 500),
-    ("Kosan C Cigadung Raya", "Kosan H Sarijadi Indah", 400),
-    ("Kosan F Sarijadi Baru", "Kosan K Cigadung Hijau", 350),
-    ("Kosan I Ciumbuleuit Asri", "Kosan N Sarijadi Permai", 400),
-    ("Kosan L Sarijadi Raya", "Kosan Q Ciumbuleuit Raya", 350),
-    ("Kosan O Villa Cigadung", "Kosan T Villa Ciumbuleuit", 400)
+    # Cluster Sarijadi (antar kosan berdekatan)
+    ("Kosan Sarijadi", "Kosan Sarijadi Raya", 120),
+    ("Kosan Sarijadi", "Kosan Bu Nita Sarijadi", 100),
+    ("Kosan Sarijadi Raya", "Kosan Erka Sarijadi", 90),
+    ("Kosan Bu Nita Sarijadi", "Kosan Bapak Yusup Sarijadi", 130),
+    ("Kosan 75 Sarijadi", "Kosan Sarijadi Ummu Asfar", 80),
+    ("Kosan Sarijadi Cijerokaso", "Kosan Grhya Sahitya Sarijadi", 150),
+    ("Kosan Grhya Sahitya Sarijadi", "Kosan Dy Culture Maranatha", 200),
+    ("Kosan Maranatha", "Kosan The Setraria One Maranatha", 70),
+    ("Kosan Pariwisata 15", "Kosan Parwis 22", 60),
+    ("Kosan Frank House", "Kosan Admasetiabudhi Garden View", 100),
+
+    # Kosan umum Sarijadi (terhubung ke cluster Sarijadi)
+    ("Kosan Summer House", "Kosan Sarijadi", 140),
+    ("Kosan Rizka I", "Kosan Sarijadi Raya", 110),
+    ("Kosan Ana", "Kosan Bu Nita Sarijadi", 90),
+    ("Kosan Budi Indah 3", "Kosan 75 Sarijadi", 130),
+    ("Kosan Orange", "Kosan Erka Sarijadi", 100),
+    ("Kosan Zidni", "Kosan Pariwisata 15", 120),
+    ("Kosan Sarimadu Barat", "Kosan Parwis 22", 100),
+    ("Kosan Bu Neneng", "Kosan Bu Hj Neneng", 80),
+    ("Kosan Bu Hj Neneng", "Kosan Sarijadi", 160),
+    ("Kosan Beat", "Kosan Maranatha", 90),
+    ("Kosan Bsp", "Kosan Admasetiabudhi Garden View", 140),
+    ("Kosan Jimin", "Kosan Sarijadi Ummu Asfar", 100),
+    ("Kosan DaKost Single", "Kosan Sarijadi", 120),
+    
+    # Connect isolated chains to main network
+    ("Kosan Sarimah", "Kosan Bu Sumi", 90),
+    ("Kosan Bu Sumi", "Kosan Umi", 80),
+    ("Kosan Umi", "Kosan Sari Asih", 100),
+    ("Kosan Sari Asih", "Kosan Green Home Sari Asih", 70),
+    ("Kosan Green Home Sari Asih", "Kosan Sarijadi", 150),  # Connect to main network
+    
+    ("Kosan Leskos", "Kosan A Fadhil", 60),
+    ("Kosan A Fadhil", "Kosan Nyaman Murah", 90),
+    ("Kosan Nyaman Murah", "Kosan Sarijadi Raya", 120),  # Connect to main network
+    
+    ("Kosan Pondok Lathifah", "Kosan Djapa", 100),
+    ("Kosan Djapa", "Kosan Bu Nita Sarijadi", 110),  # Connect to main network
+    
+    ("Kosan Aamir", "Kosan Pondok Arjuna", 80),
+    ("Kosan Pondok Arjuna", "Kosan Pondok Hijau", 70),
+    ("Kosan Pondok Hijau", "Kosan 75 Sarijadi", 100),  # Connect to main network
+    
+    ("Kosan Elite Ddr 203", "Kosan Willy", 90),
+    ("Kosan Willy", "Kosan Frank House", 120),  # Connect to main network
+    
+    ("Kosan Sri Yuningsih", "Kosan Graha 171", 110),
+    ("Kosan Graha 171", "Kosan Admasetiabudhi Garden View", 100),  # Connect to main network
+    
+    ("Kosan Peach Home", "Kosan Amma 2", 80),
+    ("Kosan Amma 2", "Kosan Sarijadi Ummu Asfar", 90),  # Connect to main network
+    
+    ("Kosan Karizma Guesthouse", "Kosan Wisma Komando2", 100),
+    ("Kosan Wisma Komando2", "Kosan Parwis 22", 120),  # Connect to main network
+    
+    ("Kosan Icarus 1", "Kosan Rumah De Ajeng", 90),
+    ("Kosan Rumah De Ajeng", "Kosan Pariwisata 15", 100),  # Connect to main network
+    
+    ("Kosan Fortuna Residence", "Kosan 75 Sarijadi", 140),
+    ("Kosan Bu Moen", "Kosan Casa De Lemon", 85),
+    ("Kosan Casa De Lemon", "Kosan Sarijadi", 120),  # Connect to main network
+    
+    ("Kosan Yugi Home 42", "Kosan Ami", 70),
+    ("Kosan Ami", "Kosan Sarijadi Raya", 100),  # Connect to main network
+    
+    ("Kosan Pink", "Kosan Gentra", 60),
+    ("Kosan Gentra", "Kosan Erka Sarijadi", 90),  # Connect to main network
+    
+    ("Kosan Mitha", "Kosan ApiQ", 90),
+    ("Kosan ApiQ", "Kosan Bapak Yusup Sarijadi", 100),  # Connect to main network
+    
+    ("Kosan DI 3/25", "Kosan An", 70),
+    ("Kosan An", "Kosan Sarijadi Cijerokaso", 80),  # Connect to main network
+    
+    ("Kosan Om Fari", "Kosan Ibu Fitri", 80),
+    ("Kosan Ibu Fitri", "Kosan Grhya Sahitya Sarijadi", 100),  # Connect to main network
+    
+    ("Kosan Paviliun Pondok Barokah", "Kosan Sri M", 100),
+    ("Kosan Sri M", "Kosan Dy Culture Maranatha", 120),  # Connect to main network
+    
+    ("Kosan Yana", "Kosan Bidan Merry", 90),
+    ("Kosan Bidan Merry", "Kosan The Setraria One Maranatha", 100),  # Connect to main network
+    
+    ("Kosan Niji House", "Kosan Indilar", 80),
+    ("Kosan Indilar", "Kosan Maranatha", 90),  # Connect to main network
+    
+    ("Kosan Almeera", "Kosan Tulip 2", 70),
+    ("Kosan Tulip 2", "Kosan Sarijadi Ummu Asfar", 80),  # Connect to main network
+    
+    ("Kosan Permai", "Kosan Ibu Nina", 80),
+    ("Kosan Ibu Nina", "Kosan Oma Nuy", 70),
+    ("Kosan Oma Nuy", "Kosan 75 Sarijadi", 90)  # Connect to main network
 ]
 
-sarijadi.add_weighted_edges_from(edges_1)
-
-nodes_2 = [
+# Cluster Gegerkalong
+gegerkalong_nodes = [
     "Polban",
-    "Kosan A Ciwaruga Asri",
-    "Kosan B Ciwaruga Indah",
-    "Kosan C Ciwaruga Baru",
-    "Kosan D Ciwaruga Raya",
-    "Kosan E Ciwaruga Permai",
-    "Kosan F Ciwaruga Hijau",
-    "Kosan G Ciwaruga Sentosa",
-    "Kosan H Ciwaruga Asih",
-    "Kosan I Ciwaruga Sari",
-    "Kosan J Ciwaruga Mekar",
-    "Kosan K Ciwaruga Jaya",
-    "Kosan L Ciwaruga Wangi",
-    "Kosan M Ciwaruga Asoka",
-    "Kosan N Ciwaruga Harmoni",
-    "Kosan O Ciwaruga Bahagia",
-    "Kosan P Ciwaruga Ceria",
-    "Kosan Q Ciwaruga Cermai",
-    "Kosan R Ciwaruga Segar",
-    "Kosan S Ciwaruga Sejahtera",
-    "Kosan T Ciwaruga Sempurna"
+    "Kosan Gegerkalong Hilir",
+    "Kosan Adem Gegerkalong",
+    "Kosan Geger Kalong Hilir Belakang",
+    "Kosan Verta Living",
+    "Kosan Westlondoncoliving",
+    "Kosan DHomey 1",
+    "Kosan TCA Tujuh",
+    "Kosan E House",
+    "Kosan Blue Sky",
+    "Kosan G",
+    "Kosan Rennicks"
 ]
 
-ciwaruga.add_nodes_from(nodes_2)
+gegerkalong_edges = [
+    # Polban ke kosan Gegerkalong
+    ("Polban", "Kosan Gegerkalong Hilir", 700),
+    ("Polban", "Kosan Adem Gegerkalong", 720),
+    ("Polban", "Kosan Geger Kalong Hilir Belakang", 750),
 
-edges_2 = [
-    ("Polban", "Kosan A Ciwaruga Asri", 400),
-    ("Polban", "Kosan B Ciwaruga Indah", 500),
-    ("Polban", "Kosan C Ciwaruga Baru", 600),
-    ("Kosan A Ciwaruga Asri", "Kosan B Ciwaruga Indah", 200),
-    ("Kosan A Ciwaruga Asri", "Kosan C Ciwaruga Baru", 300),
-    ("Kosan B Ciwaruga Indah", "Kosan D Ciwaruga Raya", 250),
-    ("Kosan C Ciwaruga Baru", "Kosan E Ciwaruga Permai", 350),
-    ("Kosan D Ciwaruga Raya", "Kosan F Ciwaruga Hijau", 200),
-    ("Kosan E Ciwaruga Permai", "Kosan G Ciwaruga Sentosa", 250),
-    ("Kosan F Ciwaruga Hijau", "Kosan H Ciwaruga Asih", 180),
-    ("Kosan G Ciwaruga Sentosa", "Kosan I Ciwaruga Sari", 200),
-    ("Kosan H Ciwaruga Asih", "Kosan J Ciwaruga Mekar", 150),
-    ("Kosan I Ciwaruga Sari", "Kosan K Ciwaruga Jaya", 250),
-    ("Kosan J Ciwaruga Mekar", "Kosan L Ciwaruga Wangi", 200),
-    ("Kosan K Ciwaruga Jaya", "Kosan M Ciwaruga Asoka", 300),
-    ("Kosan L Ciwaruga Wangi", "Kosan N Ciwaruga Harmoni", 220),
-    ("Kosan M Ciwaruga Asoka", "Kosan O Ciwaruga Bahagia", 280),
-    ("Kosan N Ciwaruga Harmoni", "Kosan P Ciwaruga Ceria", 200),
-    ("Kosan O Ciwaruga Bahagia", "Kosan Q Ciwaruga Cermai", 250),
-    ("Kosan P Ciwaruga Ceria", "Kosan R Ciwaruga Segar", 180),
-    ("Kosan Q Ciwaruga Cermai", "Kosan S Ciwaruga Sejahtera", 200),
-    ("Kosan R Ciwaruga Segar", "Kosan T Ciwaruga Sempurna", 250),
-    ("Polban", "Kosan E Ciwaruga Permai", 550),
-    ("Kosan C Ciwaruga Baru", "Kosan H Ciwaruga Asih", 400),
-    ("Kosan F Ciwaruga Hijau", "Kosan K Ciwaruga Jaya", 300),
-    ("Kosan I Ciwaruga Sari", "Kosan N Ciwaruga Harmoni", 350),
-    ("Kosan L Ciwaruga Wangi", "Kosan Q Ciwaruga Cermai", 300),
-    ("Kosan O Ciwaruga Bahagia", "Kosan T Ciwaruga Sempurna", 400)
+    # Cluster Gegerkalong (antar kosan berdekatan)
+    ("Kosan Gegerkalong Hilir", "Kosan Adem Gegerkalong", 90),
+    ("Kosan Adem Gegerkalong", "Kosan Geger Kalong Hilir Belakang", 110),
+    ("Kosan Gegerkalong Hilir", "Kosan Verta Living", 180),
+    ("Kosan Verta Living", "Kosan Westlondoncoliving", 150),
+
+    # Kosan umum Gegerkalong (terhubung ke cluster Gegerkalong)
+    ("Kosan DHomey 1", "Kosan Gegerkalong Hilir", 140),
+    ("Kosan TCA Tujuh", "Kosan Adem Gegerkalong", 130),
+    ("Kosan E House", "Kosan Westlondoncoliving", 120),
+    ("Kosan Blue Sky", "Kosan Verta Living", 100),
+    ("Kosan G", "Kosan Gegerkalong Hilir", 110),
+    ("Kosan Rennicks", "Kosan Gegerkalong Hilir", 190)
 ]
 
-ciwaruga.add_weighted_edges_from(edges_2)
-
-# Tambahkan node (string)
-nodes_3 = [
+# Cluster Ciwaruga (Cibogo + Cihanjuang)
+ciwaruga_nodes = [
     "Polban",
-    "Kosan A Gegerkalong Asri",
-    "Kosan B Gegerkalong Indah",
-    "Kosan C Gegerkalong Baru",
-    "Kosan D Gegerkalong Raya",
-    "Kosan E Gegerkalong Permai",
-    "Kosan F Gegerkalong Hijau",
-    "Kosan G Gegerkalong Sentosa",
-    "Kosan H Gegerkalong Asih",
-    "Kosan I Gegerkalong Sari",
-    "Kosan J Gegerkalong Mekar",
-    "Kosan K Gegerkalong Jaya",
-    "Kosan L Gegerkalong Wangi",
-    "Kosan M Gegerkalong Asoka",
-    "Kosan N Gegerkalong Harmoni",
-    "Kosan O Gegerkalong Bahagia",
-    "Kosan P Gegerkalong Ceria",
-    "Kosan Q Gegerkalong Cermai",
-    "Kosan R Gegerkalong Segar",
-    "Kosan S Gegerkalong Sejahtera",
-    "Kosan T Gegerkalong Sempurna"
+    "Kosan Cibogo SM91",
+    "Kosan Cibogo Atas",
+    "Kosan Vika Cibogo Pperintis Sarijadi",
+    "Kosan Na Jeges 98 Babakan",
+    "Kosan Chelsea Home",
+    "Kosan My Home",
+    "Kosan Ikhwan",
+    "Kosan Sariwangi Cihanjuang",
+    "Kosan Cihanjuang",
+    "Kosan Sariwangi Indah",
+    "Kosan Nyonya Residence",
+    "Kosan Aibay",
+    "Kosan Mutiara"
 ]
 
-gegerkalong.add_nodes_from(nodes_3)
+ciwaruga_edges = [
+    # Polban ke kosan Ciwaruga (Cibogo)
+    ("Polban", "Kosan Cibogo SM91", 800),
+    ("Polban", "Kosan Cibogo Atas", 820),
+    ("Polban", "Kosan Vika Cibogo Pperintis Sarijadi", 850),
 
-# Tambahkan edge
-edges_3 = [
-    ("Polban", "Kosan A Gegerkalong Asri", 450),
-    ("Polban", "Kosan B Gegerkalong Indah", 550),
-    ("Polban", "Kosan C Gegerkalong Baru", 650),
-    ("Kosan A Gegerkalong Asri", "Kosan B Gegerkalong Indah", 200),
-    ("Kosan A Gegerkalong Asri", "Kosan C Gegerkalong Baru", 300),
-    ("Kosan B Gegerkalong Indah", "Kosan D Gegerkalong Raya", 250),
-    ("Kosan C Gegerkalong Baru", "Kosan E Gegerkalong Permai", 350),
-    ("Kosan D Gegerkalong Raya", "Kosan F Gegerkalong Hijau", 200),
-    ("Kosan E Gegerkalong Permai", "Kosan G Gegerkalong Sentosa", 250),
-    ("Kosan F Gegerkalong Hijau", "Kosan H Gegerkalong Asih", 180),
-    ("Kosan G Gegerkalong Sentosa", "Kosan I Gegerkalong Sari", 200),
-    ("Kosan H Gegerkalong Asih", "Kosan J Gegerkalong Mekar", 150),
-    ("Kosan I Gegerkalong Sari", "Kosan K Gegerkalong Jaya", 250),
-    ("Kosan J Gegerkalong Mekar", "Kosan L Gegerkalong Wangi", 200),
-    ("Kosan K Gegerkalong Jaya", "Kosan M Gegerkalong Asoka", 300),
-    ("Kosan L Gegerkalong Wangi", "Kosan N Gegerkalong Harmoni", 220),
-    ("Kosan M Gegerkalong Asoka", "Kosan O Gegerkalong Bahagia", 280),
-    ("Kosan N Gegerkalong Harmoni", "Kosan P Gegerkalong Ceria", 200),
-    ("Kosan O Gegerkalong Bahagia", "Kosan Q Gegerkalong Cermai", 250),
-    ("Kosan P Gegerkalong Ceria", "Kosan R Gegerkalong Segar", 180),
-    ("Kosan Q Gegerkalong Cermai", "Kosan S Gegerkalong Sejahtera", 200),
-    ("Kosan R Gegerkalong Segar", "Kosan T Gegerkalong Sempurna", 250),
-    ("Polban", "Kosan E Gegerkalong Permai", 600),
-    ("Kosan C Gegerkalong Baru", "Kosan H Gegerkalong Asih", 400),
-    ("Kosan F Gegerkalong Hijau", "Kosan K Gegerkalong Jaya", 300),
-    ("Kosan I Gegerkalong Sari", "Kosan N Gegerkalong Harmoni", 350),
-    ("Kosan L Gegerkalong Wangi", "Kosan Q Gegerkalong Cermai", 300),
-    ("Kosan O Gegerkalong Bahagia", "Kosan T Gegerkalong Sempurna", 400)
+    # Polban ke kosan Ciwaruga (Cihanjuang)
+    ("Polban", "Kosan Sariwangi Cihanjuang", 1200),
+    ("Polban", "Kosan Cihanjuang", 1250),
+    ("Polban", "Kosan Sariwangi Indah", 1300),
+
+    # Cluster Cibogo (antar kosan berdekatan)
+    ("Kosan Cibogo SM91", "Kosan Cibogo Atas", 100),
+    ("Kosan Cibogo Atas", "Kosan Vika Cibogo Pperintis Sarijadi", 120),
+    ("Kosan Vika Cibogo Pperintis Sarijadi", "Kosan Na Jeges 98 Babakan", 200),
+
+    # Cluster Cihanjuang (antar kosan berdekatan)
+    ("Kosan Sariwangi Cihanjuang", "Kosan Cihanjuang", 150),
+    ("Kosan Cihanjuang", "Kosan Sariwangi Indah", 180),
+
+    # Kosan umum Ciwaruga (terhubung ke cluster terdekat)
+    ("Kosan Chelsea Home", "Kosan Cibogo SM91", 170),
+    ("Kosan My Home", "Kosan Cibogo Atas", 150),
+    ("Kosan Ikhwan", "Kosan Cibogo SM91", 180),
+    ("Kosan Nyonya Residence", "Kosan Sariwangi Indah", 200),
+    ("Kosan Aibay", "Kosan Cihanjuang", 160),
+    ("Kosan Mutiara", "Kosan Sariwangi Cihanjuang", 130)
 ]
 
-gegerkalong.add_weighted_edges_from(edges_3)
+# Create graphs for each cluster
+# Sarijadi Graph
+sarijadi.add_nodes_from(sarijadi_nodes)
+sarijadi.add_weighted_edges_from(sarijadi_edges)
 
-savegraphdb(sarijadi, './sarijadi.json')
-savegraphdb(ciwaruga, './ciwaruga.json')
-savegraphdb(gegerkalong, './gegerkalong.json')
+# Gegerkalong Graph
+gegerkalong.add_nodes_from(gegerkalong_nodes)
+gegerkalong.add_weighted_edges_from(gegerkalong_edges)
+
+# Ciwaruga Graph
+ciwaruga.add_nodes_from(ciwaruga_nodes)
+ciwaruga.add_weighted_edges_from(ciwaruga_edges)
+
+# Save graphs to JSON files
+savegraphdb(sarijadi, "sarijadi.json")
+savegraphdb(gegerkalong, "gegerkalong.json")
+savegraphdb(ciwaruga, "ciwaruga.json")
+
+print("Graph databases created successfully!")
+print(f"Sarijadi cluster: {sarijadi.number_of_nodes()} nodes, {sarijadi.number_of_edges()} edges")
+print(f"Gegerkalong cluster: {gegerkalong.number_of_nodes()} nodes, {gegerkalong.number_of_edges()} edges")
+print(f"Ciwaruga cluster: {ciwaruga.number_of_nodes()} nodes, {ciwaruga.number_of_edges()} edges")

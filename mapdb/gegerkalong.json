@@ -7,206 +7,104 @@
             "id": "Polban"
         },
         {
-            "id": "Kosan A Gegerkalong Asri"
+            "id": "Kosan Gegerkalong Hilir"
         },
         {
-            "id": "Kosan B Gegerkalong Indah"
+            "id": "Kosan Adem Gegerkalong"
         },
         {
-            "id": "Kosan C Gegerkalong Baru"
+            "id": "Kosan Geger Kalong Hilir Belakang"
         },
         {
-            "id": "Kosan D Gegerkalong Raya"
+            "id": "Kosan Verta Living"
         },
         {
-            "id": "Kosan E Gegerkalong Permai"
+            "id": "Kosan Westlondoncoliving"
         },
         {
-            "id": "Kosan F Gegerkalong Hijau"
+            "id": "Kosan DHomey 1"
         },
         {
-            "id": "Kosan G Gegerkalong Sentosa"
+            "id": "Kosan TCA Tujuh"
         },
         {
-            "id": "Kosan H Gegerkalong Asih"
+            "id": "Kosan E House"
         },
         {
-            "id": "Kosan I Gegerkalong Sari"
+            "id": "Kosan Blue Sky"
         },
         {
-            "id": "Kosan J Gegerkalong Mekar"
+            "id": "Kosan G"
         },
         {
-            "id": "Kosan K Gegerkalong Jaya"
-        },
-        {
-            "id": "Kosan L Gegerkalong Wangi"
-        },
-        {
-            "id": "Kosan M Gegerkalong Asoka"
-        },
-        {
-            "id": "Kosan N Gegerkalong Harmoni"
-        },
-        {
-            "id": "Kosan O Gegerkalong Bahagia"
-        },
-        {
-            "id": "Kosan P Gegerkalong Ceria"
-        },
-        {
-            "id": "Kosan Q Gegerkalong Cermai"
-        },
-        {
-            "id": "Kosan R Gegerkalong Segar"
-        },
-        {
-            "id": "Kosan S Gegerkalong Sejahtera"
-        },
-        {
-            "id": "Kosan T Gegerkalong Sempurna"
+            "id": "Kosan Rennicks"
         }
     ],
     "edges": [
         {
-            "weight": 450,
+            "weight": 700,
             "source": "Polban",
-            "target": "Kosan A Gegerkalong Asri"
+            "target": "Kosan Gegerkalong Hilir"
         },
         {
-            "weight": 550,
+            "weight": 720,
             "source": "Polban",
-            "target": "Kosan B Gegerkalong Indah"
+            "target": "Kosan Adem Gegerkalong"
         },
         {
-            "weight": 650,
+            "weight": 750,
             "source": "Polban",
-            "target": "Kosan C Gegerkalong Baru"
+            "target": "Kosan Geger Kalong Hilir Belakang"
         },
         {
-            "weight": 600,
-            "source": "Polban",
-            "target": "Kosan E Gegerkalong Permai"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan A Gegerkalong Asri",
-            "target": "Kosan B Gegerkalong Indah"
-        },
-        {
-            "weight": 300,
-            "source": "Kosan A Gegerkalong Asri",
-            "target": "Kosan C Gegerkalong Baru"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan B Gegerkalong Indah",
-            "target": "Kosan D Gegerkalong Raya"
-        },
-        {
-            "weight": 350,
-            "source": "Kosan C Gegerkalong Baru",
-            "target": "Kosan E Gegerkalong Permai"
-        },
-        {
-            "weight": 400,
-            "source": "Kosan C Gegerkalong Baru",
-            "target": "Kosan H Gegerkalong Asih"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan D Gegerkalong Raya",
-            "target": "Kosan F Gegerkalong Hijau"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan E Gegerkalong Permai",
-            "target": "Kosan G Gegerkalong Sentosa"
+            "weight": 90,
+            "source": "Kosan Gegerkalong Hilir",
+            "target": "Kosan Adem Gegerkalong"
         },
         {
             "weight": 180,
-            "source": "Kosan F Gegerkalong Hijau",
-            "target": "Kosan H Gegerkalong Asih"
+            "source": "Kosan Gegerkalong Hilir",
+            "target": "Kosan Verta Living"
         },
         {
-            "weight": 300,
-            "source": "Kosan F Gegerkalong Hijau",
-            "target": "Kosan K Gegerkalong Jaya"
+            "weight": 140,
+            "source": "Kosan Gegerkalong Hilir",
+            "target": "Kosan DHomey 1"
         },
         {
-            "weight": 200,
-            "source": "Kosan G Gegerkalong Sentosa",
-            "target": "Kosan I Gegerkalong Sari"
+            "weight": 110,
+            "source": "Kosan Gegerkalong Hilir",
+            "target": "Kosan G"
+        },
+        {
+            "weight": 190,
+            "source": "Kosan Gegerkalong Hilir",
+            "target": "Kosan Rennicks"
+        },
+        {
+            "weight": 110,
+            "source": "Kosan Adem Gegerkalong",
+            "target": "Kosan Geger Kalong Hilir Belakang"
+        },
+        {
+            "weight": 130,
+            "source": "Kosan Adem Gegerkalong",
+            "target": "Kosan TCA Tujuh"
         },
         {
             "weight": 150,
-            "source": "Kosan H Gegerkalong Asih",
-            "target": "Kosan J Gegerkalong Mekar"
+            "source": "Kosan Verta Living",
+            "target": "Kosan Westlondoncoliving"
         },
         {
-            "weight": 250,
-            "source": "Kosan I Gegerkalong Sari",
-            "target": "Kosan K Gegerkalong Jaya"
+            "weight": 100,
+            "source": "Kosan Verta Living",
+            "target": "Kosan Blue Sky"
         },
         {
-            "weight": 350,
-            "source": "Kosan I Gegerkalong Sari",
-            "target": "Kosan N Gegerkalong Harmoni"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan J Gegerkalong Mekar",
-            "target": "Kosan L Gegerkalong Wangi"
-        },
-        {
-            "weight": 300,
-            "source": "Kosan K Gegerkalong Jaya",
-            "target": "Kosan M Gegerkalong Asoka"
-        },
-        {
-            "weight": 220,
-            "source": "Kosan L Gegerkalong Wangi",
-            "target": "Kosan N Gegerkalong Harmoni"
-        },
-        {
-            "weight": 300,
-            "source": "Kosan L Gegerkalong Wangi",
-            "target": "Kosan Q Gegerkalong Cermai"
-        },
-        {
-            "weight": 280,
-            "source": "Kosan M Gegerkalong Asoka",
-            "target": "Kosan O Gegerkalong Bahagia"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan N Gegerkalong Harmoni",
-            "target": "Kosan P Gegerkalong Ceria"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan O Gegerkalong Bahagia",
-            "target": "Kosan Q Gegerkalong Cermai"
-        },
-        {
-            "weight": 400,
-            "source": "Kosan O Gegerkalong Bahagia",
-            "target": "Kosan T Gegerkalong Sempurna"
-        },
-        {
-            "weight": 180,
-            "source": "Kosan P Gegerkalong Ceria",
-            "target": "Kosan R Gegerkalong Segar"
-        },
-        {
-            "weight": 200,
-            "source": "Kosan Q Gegerkalong Cermai",
-            "target": "Kosan S Gegerkalong Sejahtera"
-        },
-        {
-            "weight": 250,
-            "source": "Kosan R Gegerkalong Segar",
-            "target": "Kosan T Gegerkalong Sempurna"
+            "weight": 120,
+            "source": "Kosan Westlondoncoliving",
+            "target": "Kosan E House"
         }
     ]
 }
