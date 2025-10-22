@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
-#fungsi untuk dijkstra
+# fungsi buat cari jalan terpendek pake dijkstra
 def polbanpath(tujuanawal, polban, graph):
     shortest_path = nx.dijkstra_path(graph, source=tujuanawal, target=polban)
     shortest_path_length = nx.dijkstra_path_length(graph, source=tujuanawal, target=polban)
@@ -38,17 +38,9 @@ def loadgraphdb(filepath):
     return json_graph.node_link_graph(mapdb, edges="edges")
 
 def get_kosan_nodes(graph):
-    """
-    Extract all kosan nodes from the graph
-    Returns a list of node names that contain 'Kosan'
-    """
     return [node for node in graph.nodes() if 'Kosan' in str(node)]
 
 def calculate_all_paths_to_polban(graph):
-    """
-    Calculate shortest paths from all kosan nodes to Polban
-    Returns a dictionary with kosan names as keys and (path, distance) as values
-    """
     kosan_nodes = get_kosan_nodes(graph)
     paths_data = {}
     
@@ -67,17 +59,4 @@ def calculate_all_paths_to_polban(graph):
                 'formatted_distance': "Tidak ada jalur"
             }
     
-    # Sort by distance
     return dict(sorted(paths_data.items(), key=lambda x: x[1]['distance']))
-
-
-
-# now_viewing2 = loadgraphdb('mapdb/ciwaruga.json')
-# pos = nx.spring_layout(now_viewing2, seed=15)
-# shortpath, shortest_path_length = polbanpath('Kosan O Ciwaruga Bahagia','Polban', now_viewing2)
-# showhighlightpath(now_viewing2,pos,shortpath)
-
-# now_viewing3 = loadgraphdb('mapdb/gegerkalong.json')
-# pos = nx.spring_layout(now_viewing3, seed=40)
-# shortpath, shortest_path_length = polbanpath('Kosan F Gegerkalong Hijau','Polban', now_viewing3)
-# showhighlightpath(now_viewing3,pos,shortpath)
