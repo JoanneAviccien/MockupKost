@@ -107,9 +107,9 @@ def highlight_searched_kosan(kosan_name, current_graph, view_state, ax, plot):
     # set layout berdasarkan area
     match area_name:
         case 'Sarijadi':
-            pos = nx.spring_layout(current_graph, seed=42, method='energy')
+            pos = nx.forceatlas2_layout(current_graph, seed=729)
         case 'Ciwaruga':
-            pos = nx.spring_layout(current_graph, seed=123, method='energy')
+            pos = nx.forceatlas2_layout(current_graph, seed=729)
         case 'Gegerkalong':
             pos = nx.forceatlas2_layout(current_graph, seed=69)
         case _:
@@ -257,13 +257,13 @@ def load_area_graph(area_name, view_state, ax, plot, scroll_container, highlight
     # set layout berdasarkan area
     match area_name:
         case 'Sarijadi':
-            pos = nx.spring_layout(now_viewing, seed=42, method='energy')
+            pos = nx.forceatlas2_layout(current_graph, seed=729)
         case 'Ciwaruga':
-            pos = nx.spring_layout(now_viewing, seed=123, method='energy')
+            pos = nx.forceatlas2_layout(current_graph, seed=729)
         case 'Gegerkalong':
-            pos = nx.forceatlas2_layout(now_viewing, seed=69)
+            pos = nx.forceatlas2_layout(current_graph, seed=69)
         case _:
-            pos = nx.forceatlas2_layout(now_viewing, seed=314)
+            pos = nx.forceatlas2_layout(current_graph, seed=314)
             
     # gambar jalur awal
     shortpath, shortest_path_length = bs.polbanpath(area_data[area_name]['kosan'], 'Polban', now_viewing)

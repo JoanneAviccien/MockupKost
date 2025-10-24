@@ -107,7 +107,7 @@ def main_page(client: Client):
                             
                             current_graph = now_viewing
                             
-                            pos = nx.spring_layout(current_graph, seed=42, method='energy')
+                            pos = nx.forceatlas2_layout(current_graph, seed=729)
                             shortpath, shortest_path_length = bs.polbanpath('Kosan Grhya Sahitya Sarijadi','Polban', now_viewing)
                             bs.showhighlightpath(now_viewing,ax,pos,shortpath)
                             
