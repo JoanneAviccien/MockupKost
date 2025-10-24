@@ -1,7 +1,7 @@
 # 🏠 MockupKost
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
-[![NiceGUI](https://img.shields.io/badge/Framework-NiceGUI-ff6f61?logo=flask)](https://nicegui.io/)
+[![NiceGUI](https://img.shields.io/badge/Framework-NiceGUI-ff6f61?logo=python)](https://nicegui.io/)
 [![NetworkX](https://img.shields.io/badge/Library-NetworkX-3776ab?logo=python)](https://networkx.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Repo Size](https://img.shields.io/github/repo-size/JoanneAviccien/MockupKost)](https://github.com/JoanneAviccien/MockupKost)
