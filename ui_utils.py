@@ -1,6 +1,6 @@
 from nicegui import ui
 import networkx as nx
-import backshots as bs
+import backend as bs
 
 def search_kosan(search_input, current_graph, highlight_searched_kosan, update_kosan_cards_filtered, scroll_container, gender_filter=None, price_filter=None, distance_filter=None):
     # cari kosan berdasarkan input user

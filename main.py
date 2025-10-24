@@ -1,7 +1,7 @@
 from nicegui import ui, Client
 import networkx as nx
 import matplotlib.pyplot as plt
-import backshots as bs
+import backend as bs
 import ui_utils as utils
 
 @ui.page('/')
@@ -147,4 +147,4 @@ def main_page(client: Client):
                                 ui.button(on_click=lambda: move_view(0.1, 0), color='#fecf33').props('icon=west')
                                 ui.button(on_click=lambda: move_view(-0.1, 0), color='#fecf33').props('icon=east')
 
-ui.run(port=67, title='Aplikasi Pemetaan Kosan Polban', native=True, fullscreen=True)
+ui.run(port=67, title='Aplikasi Pemetaan Kosan Polban', native=True, window_size=(1366, 768))

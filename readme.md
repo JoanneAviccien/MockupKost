@@ -30,3 +30,5 @@ Aplikasi ini menampilkan **mockup peta kos-kosan**, di mana setiap kamar atau lo
 - **[NiceGUI](https://nicegui.io/)** – Framework GUI modern berbasis web
 - **[NetworkX](https://networkx.org/)** – Library untuk membuat, memanipulasi, dan mempelajari struktur graf
 - **Matplotlib** (opsional, untuk visualisasi statis)
+- **Pandas**
+- **Scipy**
