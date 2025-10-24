@@ -12,6 +12,9 @@ Aplikasi ini menampilkan **mockup peta kos-kosan**, di mana setiap kamar atau lo
 
 ---
 
+## 🐟 Fishbone/Ishikawa Diagram
+![Fishbone](assets/fishbone.png)
+
 ## 🎯 Fitur Utama
 
 - Visualisasi graf kos-kosan secara interaktif
