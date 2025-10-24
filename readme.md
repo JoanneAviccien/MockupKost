@@ -15,6 +15,8 @@ Aplikasi ini menampilkan **mockup peta kos-kosan**, di mana setiap kamar atau lo
 ## 🐟 Fishbone/Ishikawa Diagram
 ![Fishbone](assets/fishbone.png)
 
+---
+
 ## 🎯 Fitur Utama
 
 - Visualisasi graf kos-kosan secara interaktif
@@ -22,13 +24,9 @@ Aplikasi ini menampilkan **mockup peta kos-kosan**, di mana setiap kamar atau lo
 - Antarmuka pengguna berbasis web dengan NiceGUI
 - Demonstrasi konsep dasar teori graf: derajat node, jalur, konektivitas, dll.
 
----
-
 ## 🛠️ Dependencies/Requirements
 
 - **Python 3.8+**
 - **[NiceGUI](https://nicegui.io/)** – Framework GUI modern berbasis web
 - **[NetworkX](https://networkx.org/)** – Library untuk membuat, memanipulasi, dan mempelajari struktur graf
 - **Matplotlib** (opsional, untuk visualisasi statis)
-
----
