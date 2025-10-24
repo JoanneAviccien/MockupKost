@@ -1,21 +1,116 @@
 import networkx as nx
 import networkx.readwrite as json_graph
 import json
+import pandas as pd
 
 def savegraphdb(graph, filepath):
     mapdb = json_graph.node_link_data(graph, edges="edges")
     with open(filepath, 'w') as f:
         json.dump(mapdb, f, indent=4)
 
+def load_kosan_data(csv_path):
+    """Load kosan data from CSV and create mapping for price and gender"""
+    try:
+        df = pd.read_csv(csv_path)
+        print(f"Successfully loaded CSV with {len(df)} rows")
+    except Exception as e:
+        print(f"Error loading CSV: {e}")
+        return {}
+    
+    kosan_data = {}
+    
+    for _, row in df.iterrows():
+        try:
+            kosan_name = str(row['Kost Name (as listed)']).strip()
+            gender = str(row['Gender']).strip()
+            original_price = row['Original Price (Rp)']
+            discounted_price = row['Discounted Price (Rp)']
+            
+            # Use discounted price if available, otherwise use original price
+            price = None
+            if pd.notna(discounted_price) and str(discounted_price).strip() not in ['—', '', 'nan']:
+                price = discounted_price
+            elif pd.notna(original_price) and str(original_price).strip() not in ['—', '', 'nan']:
+                price = original_price
+            
+            # Clean price string and convert to integer
+            if price is not None:
+                # Handle different price formats
+                price_str = str(price).strip()
+                # Remove dots (thousand separators) and commas
+                price_str = price_str.replace('.', '').replace(',', '')
+                
+                try:
+                    price_int = int(price_str)
+                    kosan_data[kosan_name] = {
+                        'price': price_int,
+                        'gender': gender
+                    }
+                except ValueError as e:
+                    print(f"Warning: Could not parse price for {kosan_name}: {price_str} - {e}")
+                    # Still add the entry with price 0
+                    kosan_data[kosan_name] = {
+                        'price': 0,
+                        'gender': gender
+                    }
+            else:
+                # No valid price data, add with default values
+                kosan_data[kosan_name] = {
+                    'price': 0,
+                    'gender': gender
+                }
+                
+        except Exception as e:
+            print(f"Error processing row: {e}")
+            continue
+    
+    print(f"Successfully processed {len(kosan_data)} kosan entries")
+    return kosan_data
+
+def get_kosan_attributes(kosan_name, kosan_data):
+    """Get price and gender attributes for a kosan node"""
+    # Try exact match first
+    if kosan_name in kosan_data:
+        return kosan_data[kosan_name]
+    
+    # Try partial matching for cases where names might not match exactly
+    kosan_lower = kosan_name.lower()
+    for data_name, data in kosan_data.items():
+        data_lower = data_name.lower()
+        
+        # Check if one contains the other (with some tolerance)
+        if (kosan_lower in data_lower or data_lower in kosan_lower or
+            any(word in data_lower for word in kosan_lower.split() if len(word) > 3)):
+            return data
+    
+    # Try matching by removing common prefixes/suffixes
+    kosan_clean = kosan_name.replace('Kosan ', '').replace('Kost ', '').lower()
+    for data_name, data in kosan_data.items():
+        data_clean = data_name.replace('Kosan ', '').replace('Kost ', '').lower()
+        if kosan_clean in data_clean or data_clean in kosan_clean:
+            return data
+    
+    # Default values if no match found
+    return {'price': 0, 'gender': 'Unknown'}
+
+# Load kosan data from CSV
+print("Loading kosan data from CSV...")
+kosan_data = load_kosan_data("datakosan.csv")
+
+if not kosan_data:
+    print("Warning: No kosan data loaded. Nodes will have default attributes.")
+    kosan_data = {}
+
 sarijadi = nx.Graph()
 ciwaruga = nx.Graph()
 gegerkalong = nx.Graph()
 
-# Cluster Sarijadi
+# Cluster Sarijadi - Reduced to ~30 nodes for better comprehension
 sarijadi_nodes = [
     "Polban",
+    # Main cluster near Polban
     "Kosan Dy Culture Maranatha",
-    "Kosan Maranatha",
+    "Kosan Maranatha", 
     "Kosan The Setraria One Maranatha",
     "Kosan Grhya Sahitya Sarijadi",
     "Kosan Sarijadi Raya",
@@ -30,70 +125,27 @@ sarijadi_nodes = [
     "Kosan Parwis 22",
     "Kosan Frank House",
     "Kosan Admasetiabudhi Garden View",
+    # Secondary cluster
     "Kosan Summer House",
     "Kosan Rizka I",
     "Kosan Ana",
-    "Kosan Budi Indah 3",
     "Kosan Orange",
-    "Kosan Zidni",
-    "Kosan Sarimadu Barat",
     "Kosan Bu Neneng",
-    "Kosan Bu Hj Neneng",
     "Kosan Beat",
-    "Kosan Bsp",
     "Kosan Jimin",
     "Kosan DaKost Single",
+    # Tertiary cluster
     "Kosan Sarimah",
-    "Kosan Bu Sumi",
-    "Kosan Umi",
     "Kosan Sari Asih",
-    "Kosan Green Home Sari Asih",
     "Kosan Leskos",
-    "Kosan A Fadhil",
-    "Kosan Nyaman Murah",
     "Kosan Pondok Lathifah",
-    "Kosan Djapa",
-    "Kosan Aamir",
-    "Kosan Pondok Arjuna",
-    "Kosan Pondok Hijau",
     "Kosan Elite Ddr 203",
-    "Kosan Willy",
     "Kosan Sri Yuningsih",
-    "Kosan Graha 171",
-    "Kosan Peach Home",
-    "Kosan Amma 2",
-    "Kosan Karizma Guesthouse",
-    "Kosan Wisma Komando2",
-    "Kosan Icarus 1",
-    "Kosan Rumah De Ajeng",
-    "Kosan Fortuna Residence",
-    "Kosan Bu Moen",
-    "Kosan Casa De Lemon",
-    "Kosan Yugi Home 42",
-    "Kosan Ami",
-    "Kosan Pink",
-    "Kosan Gentra",
-    "Kosan Mitha",
-    "Kosan ApiQ",
-    "Kosan DI 3/25",
-    "Kosan An",
-    "Kosan Om Fari",
-    "Kosan Ibu Fitri",
-    "Kosan Paviliun Pondok Barokah",
-    "Kosan Sri M",
-    "Kosan Yana",
-    "Kosan Bidan Merry",
-    "Kosan Niji House",
-    "Kosan Indilar",
-    "Kosan Almeera",
-    "Kosan Tulip 2",
-    "Kosan Permai",
-    "Kosan Ibu Nina",
-    "Kosan Oma Nuy"
+    "Kosan Peach Home"
 ]
 
 sarijadi_edges = [
-    # Polban ke kosan Sarijadi
+    # Direct connections from Polban to main cluster
     ("Polban", "Kosan Dy Culture Maranatha", 350),
     ("Polban", "Kosan Maranatha", 370),
     ("Polban", "Kosan The Setraria One Maranatha", 380),
@@ -111,7 +163,7 @@ sarijadi_edges = [
     ("Polban", "Kosan Frank House", 630),
     ("Polban", "Kosan Admasetiabudhi Garden View", 650),
 
-    # Cluster Sarijadi (antar kosan berdekatan)
+    # Main cluster connections (core Sarijadi area)
     ("Kosan Sarijadi", "Kosan Sarijadi Raya", 120),
     ("Kosan Sarijadi", "Kosan Bu Nita Sarijadi", 100),
     ("Kosan Sarijadi Raya", "Kosan Erka Sarijadi", 90),
@@ -123,91 +175,50 @@ sarijadi_edges = [
     ("Kosan Pariwisata 15", "Kosan Parwis 22", 60),
     ("Kosan Frank House", "Kosan Admasetiabudhi Garden View", 100),
 
-    # Kosan umum Sarijadi (terhubung ke cluster Sarijadi)
+    # Secondary cluster connections
     ("Kosan Summer House", "Kosan Sarijadi", 140),
     ("Kosan Rizka I", "Kosan Sarijadi Raya", 110),
     ("Kosan Ana", "Kosan Bu Nita Sarijadi", 90),
-    ("Kosan Budi Indah 3", "Kosan 75 Sarijadi", 130),
     ("Kosan Orange", "Kosan Erka Sarijadi", 100),
-    ("Kosan Zidni", "Kosan Pariwisata 15", 120),
-    ("Kosan Sarimadu Barat", "Kosan Parwis 22", 100),
-    ("Kosan Bu Neneng", "Kosan Bu Hj Neneng", 80),
-    ("Kosan Bu Hj Neneng", "Kosan Sarijadi", 160),
+    ("Kosan Bu Neneng", "Kosan Sarijadi", 160),
     ("Kosan Beat", "Kosan Maranatha", 90),
-    ("Kosan Bsp", "Kosan Admasetiabudhi Garden View", 140),
     ("Kosan Jimin", "Kosan Sarijadi Ummu Asfar", 100),
     ("Kosan DaKost Single", "Kosan Sarijadi", 120),
+
+    # Tertiary cluster connections
+    ("Kosan Sarimah", "Kosan Sari Asih", 90),
+    ("Kosan Sari Asih", "Kosan Sarijadi", 150),
+    ("Kosan Leskos", "Kosan Sarijadi Raya", 120),
+    ("Kosan Pondok Lathifah", "Kosan Bu Nita Sarijadi", 110),
+    ("Kosan Elite Ddr 203", "Kosan Frank House", 120),
+    ("Kosan Sri Yuningsih", "Kosan Admasetiabudhi Garden View", 100),
+    ("Kosan Peach Home", "Kosan Sarijadi Ummu Asfar", 90),
     
-    # Connect isolated chains to main network
-    ("Kosan Sarimah", "Kosan Bu Sumi", 90),
-    ("Kosan Bu Sumi", "Kosan Umi", 80),
-    ("Kosan Umi", "Kosan Sari Asih", 100),
-    ("Kosan Sari Asih", "Kosan Green Home Sari Asih", 70),
-    ("Kosan Green Home Sari Asih", "Kosan Sarijadi", 150),  # Connect to main network
+    # Additional connections to improve peripheral node connectivity
+    ("Kosan Sarimah", "Kosan Summer House", 130),
+    ("Kosan Sari Asih", "Kosan Rizka I", 140),
+    ("Kosan Leskos", "Kosan Ana", 110),
+    ("Kosan Pondok Lathifah", "Kosan Orange", 120),
+    ("Kosan Elite Ddr 203", "Kosan Bu Neneng", 100),
+    ("Kosan Sri Yuningsih", "Kosan Beat", 90),
+    ("Kosan Peach Home", "Kosan Jimin", 80),
     
-    ("Kosan Leskos", "Kosan A Fadhil", 60),
-    ("Kosan A Fadhil", "Kosan Nyaman Murah", 90),
-    ("Kosan Nyaman Murah", "Kosan Sarijadi Raya", 120),  # Connect to main network
+    # Cross-connections between peripheral nodes
+    ("Kosan Sarimah", "Kosan Leskos", 160),
+    ("Kosan Sari Asih", "Kosan Pondok Lathifah", 140),
+    ("Kosan Elite Ddr 203", "Kosan Sri Yuningsih", 150),
+    ("Kosan Peach Home", "Kosan DaKost Single", 120),
     
-    ("Kosan Pondok Lathifah", "Kosan Djapa", 100),
-    ("Kosan Djapa", "Kosan Bu Nita Sarijadi", 110),  # Connect to main network
-    
-    ("Kosan Aamir", "Kosan Pondok Arjuna", 80),
-    ("Kosan Pondok Arjuna", "Kosan Pondok Hijau", 70),
-    ("Kosan Pondok Hijau", "Kosan 75 Sarijadi", 100),  # Connect to main network
-    
-    ("Kosan Elite Ddr 203", "Kosan Willy", 90),
-    ("Kosan Willy", "Kosan Frank House", 120),  # Connect to main network
-    
-    ("Kosan Sri Yuningsih", "Kosan Graha 171", 110),
-    ("Kosan Graha 171", "Kosan Admasetiabudhi Garden View", 100),  # Connect to main network
-    
-    ("Kosan Peach Home", "Kosan Amma 2", 80),
-    ("Kosan Amma 2", "Kosan Sarijadi Ummu Asfar", 90),  # Connect to main network
-    
-    ("Kosan Karizma Guesthouse", "Kosan Wisma Komando2", 100),
-    ("Kosan Wisma Komando2", "Kosan Parwis 22", 120),  # Connect to main network
-    
-    ("Kosan Icarus 1", "Kosan Rumah De Ajeng", 90),
-    ("Kosan Rumah De Ajeng", "Kosan Pariwisata 15", 100),  # Connect to main network
-    
-    ("Kosan Fortuna Residence", "Kosan 75 Sarijadi", 140),
-    ("Kosan Bu Moen", "Kosan Casa De Lemon", 85),
-    ("Kosan Casa De Lemon", "Kosan Sarijadi", 120),  # Connect to main network
-    
-    ("Kosan Yugi Home 42", "Kosan Ami", 70),
-    ("Kosan Ami", "Kosan Sarijadi Raya", 100),  # Connect to main network
-    
-    ("Kosan Pink", "Kosan Gentra", 60),
-    ("Kosan Gentra", "Kosan Erka Sarijadi", 90),  # Connect to main network
-    
-    ("Kosan Mitha", "Kosan ApiQ", 90),
-    ("Kosan ApiQ", "Kosan Bapak Yusup Sarijadi", 100),  # Connect to main network
-    
-    ("Kosan DI 3/25", "Kosan An", 70),
-    ("Kosan An", "Kosan Sarijadi Cijerokaso", 80),  # Connect to main network
-    
-    ("Kosan Om Fari", "Kosan Ibu Fitri", 80),
-    ("Kosan Ibu Fitri", "Kosan Grhya Sahitya Sarijadi", 100),  # Connect to main network
-    
-    ("Kosan Paviliun Pondok Barokah", "Kosan Sri M", 100),
-    ("Kosan Sri M", "Kosan Dy Culture Maranatha", 120),  # Connect to main network
-    
-    ("Kosan Yana", "Kosan Bidan Merry", 90),
-    ("Kosan Bidan Merry", "Kosan The Setraria One Maranatha", 100),  # Connect to main network
-    
-    ("Kosan Niji House", "Kosan Indilar", 80),
-    ("Kosan Indilar", "Kosan Maranatha", 90),  # Connect to main network
-    
-    ("Kosan Almeera", "Kosan Tulip 2", 70),
-    ("Kosan Tulip 2", "Kosan Sarijadi Ummu Asfar", 80),  # Connect to main network
-    
-    ("Kosan Permai", "Kosan Ibu Nina", 80),
-    ("Kosan Ibu Nina", "Kosan Oma Nuy", 70),
-    ("Kosan Oma Nuy", "Kosan 75 Sarijadi", 90)  # Connect to main network
+    # Additional connections to main cluster
+    ("Kosan Sarimah", "Kosan Sarijadi Raya", 180),
+    ("Kosan Leskos", "Kosan Bu Nita Sarijadi", 130),
+    ("Kosan Pondok Lathifah", "Kosan Erka Sarijadi", 140),
+    ("Kosan Elite Ddr 203", "Kosan Admasetiabudhi Garden View", 110),
+    ("Kosan Sri Yuningsih", "Kosan Frank House", 90),
+    ("Kosan Peach Home", "Kosan 75 Sarijadi", 100)
 ]
 
-# Cluster Gegerkalong
+# Cluster Gegerkalong - Reduced for consistency
 gegerkalong_nodes = [
     "Polban",
     "Kosan Gegerkalong Hilir",
@@ -244,7 +255,7 @@ gegerkalong_edges = [
     ("Kosan Rennicks", "Kosan Gegerkalong Hilir", 190)
 ]
 
-# Cluster Ciwaruga (Cibogo + Cihanjuang)
+# Cluster Ciwaruga (Cibogo + Cihanjuang) - Reduced for consistency
 ciwaruga_nodes = [
     "Polban",
     "Kosan Cibogo SM91",
@@ -296,13 +307,43 @@ ciwaruga_edges = [
 sarijadi.add_nodes_from(sarijadi_nodes)
 sarijadi.add_weighted_edges_from(sarijadi_edges)
 
+# Add attributes to Sarijadi nodes
+for node in sarijadi_nodes:
+    if node == "Polban":
+        sarijadi.nodes[node]['price'] = 0
+        sarijadi.nodes[node]['gender'] = 'N/A'
+    else:
+        attrs = get_kosan_attributes(node, kosan_data)
+        sarijadi.nodes[node]['price'] = attrs['price']
+        sarijadi.nodes[node]['gender'] = attrs['gender']
+
 # Gegerkalong Graph
 gegerkalong.add_nodes_from(gegerkalong_nodes)
 gegerkalong.add_weighted_edges_from(gegerkalong_edges)
 
+# Add attributes to Gegerkalong nodes
+for node in gegerkalong_nodes:
+    if node == "Polban":
+        gegerkalong.nodes[node]['price'] = 0
+        gegerkalong.nodes[node]['gender'] = 'N/A'
+    else:
+        attrs = get_kosan_attributes(node, kosan_data)
+        gegerkalong.nodes[node]['price'] = attrs['price']
+        gegerkalong.nodes[node]['gender'] = attrs['gender']
+
 # Ciwaruga Graph
 ciwaruga.add_nodes_from(ciwaruga_nodes)
 ciwaruga.add_weighted_edges_from(ciwaruga_edges)
+
+# Add attributes to Ciwaruga nodes
+for node in ciwaruga_nodes:
+    if node == "Polban":
+        ciwaruga.nodes[node]['price'] = 0
+        ciwaruga.nodes[node]['gender'] = 'N/A'
+    else:
+        attrs = get_kosan_attributes(node, kosan_data)
+        ciwaruga.nodes[node]['price'] = attrs['price']
+        ciwaruga.nodes[node]['gender'] = attrs['gender']
 
 # Save graphs to JSON files
 savegraphdb(sarijadi, "sarijadi.json")
@@ -313,3 +354,19 @@ print("Graph databases created successfully!")
 print(f"Sarijadi cluster: {sarijadi.number_of_nodes()} nodes, {sarijadi.number_of_edges()} edges")
 print(f"Gegerkalong cluster: {gegerkalong.number_of_nodes()} nodes, {gegerkalong.number_of_edges()} edges")
 print(f"Ciwaruga cluster: {ciwaruga.number_of_nodes()} nodes, {ciwaruga.number_of_edges()} edges")
+
+# Print sample nodes with attributes
+print("\nSample Sarijadi nodes with attributes:")
+for i, node in enumerate(list(sarijadi.nodes())[:5]):
+    attrs = sarijadi.nodes[node]
+    print(f"  {node}: price={attrs.get('price', 'N/A')}, gender={attrs.get('gender', 'N/A')}")
+
+print("\nSample Gegerkalong nodes with attributes:")
+for i, node in enumerate(list(gegerkalong.nodes())[:5]):
+    attrs = gegerkalong.nodes[node]
+    print(f"  {node}: price={attrs.get('price', 'N/A')}, gender={attrs.get('gender', 'N/A')}")
+
+print("\nSample Ciwaruga nodes with attributes:")
+for i, node in enumerate(list(ciwaruga.nodes())[:5]):
+    attrs = ciwaruga.nodes[node]
+    print(f"  {node}: price={attrs.get('price', 'N/A')}, gender={attrs.get('gender', 'N/A')}")

@@ -4,39 +4,63 @@
     "graph": {},
     "nodes": [
         {
+            "price": 0,
+            "gender": "N/A",
             "id": "Polban"
         },
         {
+            "price": 1200000,
+            "gender": "Campur",
             "id": "Kosan Gegerkalong Hilir"
         },
         {
+            "price": 975000,
+            "gender": "Putra",
             "id": "Kosan Adem Gegerkalong"
         },
         {
+            "price": 1200000,
+            "gender": "Campur",
             "id": "Kosan Geger Kalong Hilir Belakang"
         },
         {
+            "price": 1800000,
+            "gender": "Campur",
             "id": "Kosan Verta Living"
         },
         {
+            "price": 1800000,
+            "gender": "Campur",
             "id": "Kosan Westlondoncoliving"
         },
         {
+            "price": 1500000,
+            "gender": "Campur",
             "id": "Kosan DHomey 1"
         },
         {
+            "price": 1200000,
+            "gender": "Campur",
             "id": "Kosan TCA Tujuh"
         },
         {
+            "price": 1700000,
+            "gender": "Campur",
             "id": "Kosan E House"
         },
         {
+            "price": 1000000,
+            "gender": "Campur",
             "id": "Kosan Blue Sky"
         },
         {
+            "price": 1500000,
+            "gender": "Putri",
             "id": "Kosan G"
         },
         {
+            "price": 700000,
+            "gender": "Campur",
             "id": "Kosan Rennicks"
         }
     ],

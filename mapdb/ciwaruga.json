@@ -4,45 +4,73 @@
     "graph": {},
     "nodes": [
         {
+            "price": 0,
+            "gender": "N/A",
             "id": "Polban"
         },
         {
+            "price": 900000,
+            "gender": "Campur",
             "id": "Kosan Cibogo SM91"
         },
         {
+            "price": 900000,
+            "gender": "Campur",
             "id": "Kosan Cibogo Atas"
         },
         {
+            "price": 1000000,
+            "gender": "Putri",
             "id": "Kosan Vika Cibogo Pperintis Sarijadi"
         },
         {
+            "price": 1300000,
+            "gender": "Campur",
             "id": "Kosan Na Jeges 98 Babakan"
         },
         {
+            "price": 1500000,
+            "gender": "Campur",
             "id": "Kosan Chelsea Home"
         },
         {
+            "price": 1500000,
+            "gender": "Campur",
             "id": "Kosan My Home"
         },
         {
+            "price": 600000,
+            "gender": "Putra",
             "id": "Kosan Ikhwan"
         },
         {
+            "price": 650000,
+            "gender": "Putra",
             "id": "Kosan Sariwangi Cihanjuang"
         },
         {
+            "price": 650000,
+            "gender": "Putra",
             "id": "Kosan Cihanjuang"
         },
         {
+            "price": 925000,
+            "gender": "Putra",
             "id": "Kosan Sariwangi Indah"
         },
         {
+            "price": 1550000,
+            "gender": "Putri",
             "id": "Kosan Nyonya Residence"
         },
         {
+            "price": 750000,
+            "gender": "Campur",
             "id": "Kosan Aibay"
         },
         {
+            "price": 1700000,
+            "gender": "Putri",
             "id": "Kosan Mutiara"
         }
     ],
