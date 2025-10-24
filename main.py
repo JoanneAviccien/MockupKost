@@ -71,11 +71,11 @@ def main_page(client: Client):
                     # highlight jalan dari kosan yang dicari
                     utils.highlight_searched_kosan(kosan_name, current_graph, view_state, ax, plot)
 
-                def update_kosan_cards_filtered(graph, search_term, scroll_container, highlight_callback):
+                def update_kosan_cards_filtered(graph, search_term, scroll_container, highlight_callback, gender_filter_param=None, price_filter_param=None, distance_filter_param=None):
                     # update kartu kosan yang udah difilter
-                    gender_value = gender_filter.value if gender_filter else 'Semua Gender'
-                    price_value = price_filter.value if price_filter else 'Semua Harga'
-                    distance_value = distance_filter.value if distance_filter else 'Semua Jarak'
+                    gender_value = gender_filter_param.value if gender_filter_param else (gender_filter.value if gender_filter else 'Semua Gender')
+                    price_value = price_filter_param.value if price_filter_param else (price_filter.value if price_filter else 'Semua Harga')
+                    distance_value = distance_filter_param.value if distance_filter_param else (distance_filter.value if distance_filter else 'Semua Jarak')
                     utils.update_kosan_cards_filtered(graph, search_term, scroll_container, highlight_callback, gender_value, price_value, distance_value)
                 
                 def update_kosan_cards(graph, scroll_container, highlight_callback):
